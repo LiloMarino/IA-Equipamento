@@ -1,0 +1,7 @@
+[
+    {"name": "Ice Sword", "properties": ["ice", "slashing"]},
+    {"name": "Magic Wand", "properties": ["magic", "ranged"]},
+    {"name": "Piercing Spear", "properties": ["piercing", "melee"]},
+    {"name": "Fire Axe", "properties": ["fire", "slashing"]},
+    {"name": "Holy Sword", "properties": ["holy", "melee"]}
+]

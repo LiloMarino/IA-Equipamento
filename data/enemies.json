@@ -1,0 +1,5 @@
+[
+    {"name": "Dragon", "weaknesses": ["ice", "piercing", "magic"]},
+    {"name": "Goblin", "weaknesses": ["fire", "slashing"]},
+    {"name": "Zombie", "weaknesses": ["holy", "fire"]}
+]
