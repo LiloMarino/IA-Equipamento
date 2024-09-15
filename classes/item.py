@@ -1,4 +1,8 @@
+from dataclasses import dataclass
+from typing import List
+
+
+@dataclass
 class Item:
-    def __init__(self, name, properties):
-        self.name = name
-        self.properties = properties
+    name: str
+    properties: List[str]

@@ -1,4 +1,8 @@
+from dataclasses import dataclass
+from typing import List
+
+
+@dataclass
 class Enemy:
-    def __init__(self, name, weaknesses):
-        self.name = name
-        self.weaknesses = weaknesses
+    name: str
+    weaknesses: List[str]
