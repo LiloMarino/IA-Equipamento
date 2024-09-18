@@ -1,5 +1,6 @@
 from dataclasses import dataclass
 from typing import List
+
 from classes.rule import Rule
 
 
@@ -25,5 +26,5 @@ class ReteEngine:
     def run(self, enemy, items):
         applicable_items = self.match(enemy, items)
         applicable_items.sort(key=lambda x: x[1], reverse=True)
-        recommendations = [item.name for item, score in applicable_items]
-        return recommendations
+        # Agora retorna uma lista de tuplas (item, score) ao invés de apenas os nomes
+        return applicable_items

@@ -1,14 +1,15 @@
-import json
 import curses
+import json
+
 from classes.enemy import Enemy
 from classes.item import Item
-from classes.rule import Rule
 from classes.rete_engine import ReteEngine
+from classes.rule import Rule
 
 
 def load_data(file_path):
     """Carregar dados de um arquivo JSON."""
-    with open(file_path, "r") as file:
+    with open(file_path, "r", encoding="utf-8") as file:
         return json.load(file)
 
 
@@ -72,22 +73,22 @@ def create_rules(enemy):
 
 def curses_menu(stdscr, enemies, items):
     """Função para criar a CLI interativa com curses com paginação."""
+    ITEMS_PER_PAGE = 10
+    TOTAL_PAGES = (len(enemies) - 1) // ITEMS_PER_PAGE + 1
     curses.curs_set(0)
     current_row = 0
-    items_per_page = 10
     page = 0
-    total_pages = (len(enemies) - 1) // items_per_page + 1
 
     while True:
         stdscr.clear()
         stdscr.addstr(
             0,
             0,
-            f"Selecione um inimigo (Use as setas para navegar): Página {page+1}/{total_pages}",
+            f"Selecione um inimigo (Use as setas para navegar): Página {page+1}/{TOTAL_PAGES}",
         )
 
-        start_idx = page * items_per_page
-        end_idx = start_idx + items_per_page
+        start_idx = page * ITEMS_PER_PAGE
+        end_idx = start_idx + ITEMS_PER_PAGE
         current_page_enemies = enemies[start_idx:end_idx]
 
         # Exibir lista de inimigos da página atual, destacando o selecionado
@@ -106,7 +107,7 @@ def curses_menu(stdscr, enemies, items):
             current_row -= 1
         elif key == 456 and current_row < len(current_page_enemies) - 1:  # KEY DOWN
             current_row += 1
-        elif key == 454 and page < total_pages - 1:  # Ir para a próxima página
+        elif key == 454 and page < TOTAL_PAGES - 1:  # Ir para a próxima página
             page += 1
             current_row = 0  # Reseta a posição do cursor na nova página
         elif key == 452 and page > 0:  # Ir para a página anterior
@@ -116,18 +117,20 @@ def curses_menu(stdscr, enemies, items):
             selected_enemy = current_page_enemies[current_row]
             stdscr.clear()
             stdscr.addstr(0, 0, f"Inimigo selecionado: {selected_enemy.name}")
-            stdscr.addstr(1, 0, "Itens recomendados:")
+            stdscr.addstr(1, 0, "Itens recomendados (com pontuação):")
 
             # Criar as regras e executar o motor de inferência
             rules = create_rules(selected_enemy)
             rete_engine = ReteEngine(rules)
-            recommendations = rete_engine.run(selected_enemy, items)
+            recommendations_with_score = rete_engine.run(selected_enemy, items)
 
-            # Exibir os itens recomendados
-            for idx, recommendation in enumerate(recommendations):
-                stdscr.addstr(idx + 2, 0, f"{idx + 1}. {recommendation}")
+            # Exibir os itens recomendados junto com a pontuação
+            for idx, (item, score) in enumerate(recommendations_with_score):
+                stdscr.addstr(idx + 2, 0, f"{idx + 1}. {item.name} (Score: {score})")
 
-            stdscr.addstr(len(recommendations) + 3, 0, "Aperte ESC para voltar")
+            stdscr.addstr(
+                len(recommendations_with_score) + 3, 0, "Aperte ESC para voltar"
+            )
             stdscr.refresh()
 
             # Esperar o usuário apertar ESC para voltar
