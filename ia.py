@@ -71,6 +71,60 @@ def create_rules(enemy):
     return rules
 
 
+def display_recommended_items(stdscr, selected_enemy, items):
+    """Função para exibir os itens recomendados com pontuação, com paginação."""
+    ITEMS_PER_PAGE = 10
+    current_row = 0
+    page = 0
+
+    # Criar as regras e executar o motor de inferência
+    rules = create_rules(selected_enemy)
+    rete_engine = ReteEngine(rules)
+    recommendations_with_score = rete_engine.run(selected_enemy, items)
+    TOTAL_PAGES = (len(recommendations_with_score) - 1) // ITEMS_PER_PAGE + 1
+
+    while True:
+        stdscr.clear()
+        stdscr.addstr(0, 0, f"Inimigo selecionado: {selected_enemy.name}")
+        stdscr.addstr(
+            1, 0, f"Itens recomendados (com pontuação): Página {page+1}/{TOTAL_PAGES}"
+        )
+
+        # Paginando os itens recomendados
+        start_idx = page * ITEMS_PER_PAGE
+        end_idx = start_idx + ITEMS_PER_PAGE
+        current_page_items = recommendations_with_score[start_idx:end_idx]
+
+        # Exibir os itens recomendados da página atual, destacando o selecionado
+        for idx, (item, score) in enumerate(current_page_items):
+            if idx == current_row:
+                stdscr.attron(curses.color_pair(1))  # Destacar a linha selecionada
+                stdscr.addstr(idx + 2, 0, f"{item.name} (Score: {score})")
+                stdscr.attroff(curses.color_pair(1))  # Remover o destaque
+            else:
+                stdscr.addstr(idx + 2, 0, f"{item.name} (Score: {score})")
+
+        stdscr.addstr(len(current_page_items) + 3, 0, "Aperte ESC para voltar")
+
+        # Obter a tecla pressionada
+        key = stdscr.getch()
+
+        if key == 450 and current_row > 0:  # KEY UP
+            current_row -= 1
+        elif key == 456 and current_row < len(current_page_items) - 1:  # KEY DOWN
+            current_row += 1
+        elif key == 454 and page < TOTAL_PAGES - 1:  # Próxima página
+            page += 1
+            current_row = 0  # Reseta a posição do cursor na nova página
+        elif key == 452 and page > 0:  # Página anterior
+            page -= 1
+            current_row = 0  # Reseta a posição do cursor na nova página
+        elif key == 27:  # Tecla ESC para voltar ao menu anterior
+            break
+
+        stdscr.refresh()
+
+
 def curses_menu(stdscr, enemies, items):
     """Função para criar a CLI interativa com curses com paginação."""
     ITEMS_PER_PAGE = 10
@@ -107,37 +161,15 @@ def curses_menu(stdscr, enemies, items):
             current_row -= 1
         elif key == 456 and current_row < len(current_page_enemies) - 1:  # KEY DOWN
             current_row += 1
-        elif key == 454 and page < TOTAL_PAGES - 1:  # Ir para a próxima página
+        elif key == 454 and page < TOTAL_PAGES - 1:  # Próxima página
             page += 1
             current_row = 0  # Reseta a posição do cursor na nova página
-        elif key == 452 and page > 0:  # Ir para a página anterior
+        elif key == 452 and page > 0:  # Página anterior
             page -= 1
             current_row = 0  # Reseta a posição do cursor na nova página
         elif key == curses.KEY_ENTER or key in [10, 13]:  # Enter
             selected_enemy = current_page_enemies[current_row]
-            stdscr.clear()
-            stdscr.addstr(0, 0, f"Inimigo selecionado: {selected_enemy.name}")
-            stdscr.addstr(1, 0, "Itens recomendados (com pontuação):")
-
-            # Criar as regras e executar o motor de inferência
-            rules = create_rules(selected_enemy)
-            rete_engine = ReteEngine(rules)
-            recommendations_with_score = rete_engine.run(selected_enemy, items)
-
-            # Exibir os itens recomendados junto com a pontuação
-            for idx, (item, score) in enumerate(recommendations_with_score):
-                stdscr.addstr(idx + 2, 0, f"{idx + 1}. {item.name} (Score: {score})")
-
-            stdscr.addstr(
-                len(recommendations_with_score) + 3, 0, "Aperte ESC para voltar"
-            )
-            stdscr.refresh()
-
-            # Esperar o usuário apertar ESC para voltar
-            while True:
-                key = stdscr.getch()
-                if key == 27:  # Tecla ESC
-                    break
+            display_recommended_items(stdscr, selected_enemy, items)
         elif key == 27:  # Tecla ESC para encerrar o programa
             break
 
