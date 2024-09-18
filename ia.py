@@ -32,7 +32,7 @@ def create_items(data):
     """Criar objetos Item a partir dos dados carregados."""
     items = []
     for item_data in data:
-        item = Item(item_data["name"], item_data["properties"])
+        item = Item(item_data["Name"], item_data["Damage Types"])
         items.append(item)
     return items
 

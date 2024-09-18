@@ -1,7 +1,1802 @@
 [
-    {"name": "Ice Sword", "properties": ["ice", "slashing"]},
-    {"name": "Magic Wand", "properties": ["magic", "ranged"]},
-    {"name": "Piercing Spear", "properties": ["piercing", "melee"]},
-    {"name": "Fire Axe", "properties": ["fire", "slashing"]},
-    {"name": "Holy Sword", "properties": ["holy", "melee"]}
+    {
+        "Name": "+1 Moon Sickle",
+        "Damage Types": [
+            "slashing"
+        ]
+    },
+    {
+        "Name": "+2 Moon Sickle",
+        "Damage Types": [
+            "slashing"
+        ]
+    },
+    {
+        "Name": "+3 Moon Sickle",
+        "Damage Types": [
+            "slashing"
+        ]
+    },
+    {
+        "Name": "Adze of Annam",
+        "Damage Types": [
+            "slashing"
+        ]
+    },
+    {
+        "Name": "Agony",
+        "Damage Types": [
+            "bludgeoning"
+        ]
+    },
+    {
+        "Name": "Agony (Awakened)",
+        "Damage Types": [
+            "bludgeoning"
+        ]
+    },
+    {
+        "Name": "Agony (Dormant)",
+        "Damage Types": [
+            "bludgeoning"
+        ]
+    },
+    {
+        "Name": "Agony (Exalted)",
+        "Damage Types": [
+            "bludgeoning"
+        ]
+    },
+    {
+        "Name": "Akmon, Hammer of Purphoros",
+        "Damage Types": [
+            "bludgeoning"
+        ]
+    },
+    {
+        "Name": "Arcane Propulsion Arm",
+        "Damage Types": [
+            "force"
+        ]
+    },
+    {
+        "Name": "Axe of the Dwarvish Lords",
+        "Damage Types": [
+            "slashing"
+        ]
+    },
+    {
+        "Name": "Azuredge",
+        "Damage Types": [
+            "slashing"
+        ]
+    },
+    {
+        "Name": "Baba Yaga's Pestle",
+        "Damage Types": [
+            "bludgeoning"
+        ]
+    },
+    {
+        "Name": "Baleful Talon",
+        "Damage Types": [
+            "piercing"
+        ]
+    },
+    {
+        "Name": "Battleaxe",
+        "Damage Types": [
+            "slashing"
+        ]
+    },
+    {
+        "Name": "Blackrazor",
+        "Damage Types": [
+            "slashing"
+        ]
+    },
+    {
+        "Name": "Blackstaff",
+        "Damage Types": [
+            "bludgeoning"
+        ]
+    },
+    {
+        "Name": "Blade of Avernus",
+        "Damage Types": [
+            "slashing"
+        ]
+    },
+    {
+        "Name": "Blade of Broken Mirrors",
+        "Damage Types": [
+            "piercing"
+        ]
+    },
+    {
+        "Name": "Blade of Broken Mirrors (Awakened)",
+        "Damage Types": [
+            "piercing"
+        ]
+    },
+    {
+        "Name": "Blade of Broken Mirrors (Dormant)",
+        "Damage Types": [
+            "piercing"
+        ]
+    },
+    {
+        "Name": "Blade of Broken Mirrors (Exalted)",
+        "Damage Types": [
+            "piercing"
+        ]
+    },
+    {
+        "Name": "Blood Spear",
+        "Damage Types": [
+            "piercing"
+        ]
+    },
+    {
+        "Name": "Bloodaxe",
+        "Damage Types": [
+            "slashing"
+        ]
+    },
+    {
+        "Name": "Bloodrage Greataxe",
+        "Damage Types": [
+            "slashing"
+        ]
+    },
+    {
+        "Name": "Blowgun",
+        "Damage Types": [
+            "piercing"
+        ]
+    },
+    {
+        "Name": "Bob",
+        "Damage Types": [
+            "slashing"
+        ]
+    },
+    {
+        "Name": "Bonecounter",
+        "Damage Types": [
+            "bludgeoning"
+        ]
+    },
+    {
+        "Name": "Bookmark",
+        "Damage Types": [
+            "piercing"
+        ]
+    },
+    {
+        "Name": "Borealus",
+        "Damage Types": [
+            "bludgeoning"
+        ]
+    },
+    {
+        "Name": "Candle Mace",
+        "Damage Types": [
+            "bludgeoning"
+        ]
+    },
+    {
+        "Name": "Canian Fork",
+        "Damage Types": [
+            "piercing"
+        ]
+    },
+    {
+        "Name": "Club",
+        "Damage Types": [
+            "bludgeoning"
+        ]
+    },
+    {
+        "Name": "Condemner",
+        "Damage Types": [
+            "piercing"
+        ]
+    },
+    {
+        "Name": "Condemner (Awakened)",
+        "Damage Types": [
+            "piercing"
+        ]
+    },
+    {
+        "Name": "Condemner (Dormant)",
+        "Damage Types": [
+            "piercing"
+        ]
+    },
+    {
+        "Name": "Condemner (Exalted)",
+        "Damage Types": [
+            "piercing"
+        ]
+    },
+    {
+        "Name": "Corecut Dagger",
+        "Damage Types": [
+            "piercing"
+        ]
+    },
+    {
+        "Name": "Crusader's Shortsword",
+        "Damage Types": [
+            "piercing"
+        ]
+    },
+    {
+        "Name": "Dagger",
+        "Damage Types": [
+            "piercing"
+        ]
+    },
+    {
+        "Name": "Dagger of Blindsight",
+        "Damage Types": [
+            "piercing"
+        ]
+    },
+    {
+        "Name": "Dagger of Denial",
+        "Damage Types": [
+            "piercing"
+        ]
+    },
+    {
+        "Name": "Dagger of Guitar Solos",
+        "Damage Types": [
+            "piercing"
+        ]
+    },
+    {
+        "Name": "Dagger of Venom",
+        "Damage Types": [
+            "piercing"
+        ]
+    },
+    {
+        "Name": "Dart",
+        "Damage Types": [
+            "piercing"
+        ]
+    },
+    {
+        "Name": "Dawnbringer",
+        "Damage Types": [
+            "radiant"
+        ]
+    },
+    {
+        "Name": "Dekella, Bident of Thassa",
+        "Damage Types": [
+            "piercing"
+        ]
+    },
+    {
+        "Name": "Devlin's Staff of Striking",
+        "Damage Types": [
+            "bludgeoning"
+        ]
+    },
+    {
+        "Name": "Devotee's Censer",
+        "Damage Types": [
+            "bludgeoning"
+        ]
+    },
+    {
+        "Name": "Double-Bladed Scimitar",
+        "Damage Types": [
+            "slashing"
+        ]
+    },
+    {
+        "Name": "Draconic Longsword",
+        "Damage Types": [
+            "slashing"
+        ]
+    },
+    {
+        "Name": "Dragon Sensing Longsword",
+        "Damage Types": [
+            "slashing"
+        ]
+    },
+    {
+        "Name": "Dragon Thighbone Club",
+        "Damage Types": [
+            "bludgeoning"
+        ]
+    },
+    {
+        "Name": "Dragongleam",
+        "Damage Types": [
+            "piercing"
+        ]
+    },
+    {
+        "Name": "Dragonstaff of Ahghairon",
+        "Damage Types": [
+            "bludgeoning"
+        ]
+    },
+    {
+        "Name": "Dragontooth Dagger",
+        "Damage Types": [
+            "piercing"
+        ]
+    },
+    {
+        "Name": "Drown",
+        "Damage Types": [
+            "piercing"
+        ]
+    },
+    {
+        "Name": "Duskcrusher",
+        "Damage Types": [
+            "radiant"
+        ]
+    },
+    {
+        "Name": "Dwarven Thrower",
+        "Damage Types": [
+            "bludgeoning"
+        ]
+    },
+    {
+        "Name": "Dynamite",
+        "Damage Types": [
+            "fire"
+        ]
+    },
+    {
+        "Name": "Dyrrn's Tentacle Whip",
+        "Damage Types": [
+            "slashing"
+        ]
+    },
+    {
+        "Name": "Eldritch Staff",
+        "Damage Types": [
+            "bludgeoning"
+        ]
+    },
+    {
+        "Name": "Elven Thrower",
+        "Damage Types": [
+            "piercing"
+        ]
+    },
+    {
+        "Name": "Ephixis, Bow of Nylea",
+        "Damage Types": [
+            "piercing"
+        ]
+    },
+    {
+        "Name": "Fane-Eater",
+        "Damage Types": [
+            "slashing"
+        ]
+    },
+    {
+        "Name": "Fate Cutter Shears",
+        "Damage Types": [
+            "piercing"
+        ]
+    },
+    {
+        "Name": "Fenthras",
+        "Damage Types": [
+            "piercing"
+        ]
+    },
+    {
+        "Name": "Fenthras (Awakened)",
+        "Damage Types": [
+            "piercing"
+        ]
+    },
+    {
+        "Name": "Fenthras (Dormant)",
+        "Damage Types": [
+            "piercing"
+        ]
+    },
+    {
+        "Name": "Fenthras (Exalted)",
+        "Damage Types": [
+            "piercing"
+        ]
+    },
+    {
+        "Name": "Flail",
+        "Damage Types": [
+            "bludgeoning"
+        ]
+    },
+    {
+        "Name": "Flail of Tiamat",
+        "Damage Types": [
+            "bludgeoning"
+        ]
+    },
+    {
+        "Name": "Flame Lance",
+        "Damage Types": [
+            "piercing"
+        ]
+    },
+    {
+        "Name": "Flame Tongue Shortsword of Greed",
+        "Damage Types": [
+            "piercing"
+        ]
+    },
+    {
+        "Name": "Flayer Slayer",
+        "Damage Types": [
+            "slashing"
+        ]
+    },
+    {
+        "Name": "Flensing Claws",
+        "Damage Types": [
+            "slashing"
+        ]
+    },
+    {
+        "Name": "Flensing Claws (Huge)",
+        "Damage Types": [
+            "slashing"
+        ]
+    },
+    {
+        "Name": "Flensing Claws (Large)",
+        "Damage Types": [
+            "slashing"
+        ]
+    },
+    {
+        "Name": "Flensing Claws (Medium)",
+        "Damage Types": [
+            "slashing"
+        ]
+    },
+    {
+        "Name": "Flensing Claws (Small)",
+        "Damage Types": [
+            "slashing"
+        ]
+    },
+    {
+        "Name": "Glaive",
+        "Damage Types": [
+            "slashing"
+        ]
+    },
+    {
+        "Name": "Grasping Whip",
+        "Damage Types": [
+            "slashing"
+        ]
+    },
+    {
+        "Name": "Graz'tchar, the Decadent End",
+        "Damage Types": [
+            "slashing"
+        ]
+    },
+    {
+        "Name": "Greataxe",
+        "Damage Types": [
+            "slashing"
+        ]
+    },
+    {
+        "Name": "Greatclub",
+        "Damage Types": [
+            "bludgeoning"
+        ]
+    },
+    {
+        "Name": "Greater Silver Sword",
+        "Damage Types": [
+            "slashing"
+        ]
+    },
+    {
+        "Name": "Greatsword",
+        "Damage Types": [
+            "slashing"
+        ]
+    },
+    {
+        "Name": "Grovelthrash",
+        "Damage Types": [
+            "bludgeoning"
+        ]
+    },
+    {
+        "Name": "Grovelthrash (Awakened)",
+        "Damage Types": [
+            "bludgeoning"
+        ]
+    },
+    {
+        "Name": "Grovelthrash (Dormant)",
+        "Damage Types": [
+            "bludgeoning"
+        ]
+    },
+    {
+        "Name": "Grovelthrash (Exalted)",
+        "Damage Types": [
+            "bludgeoning"
+        ]
+    },
+    {
+        "Name": "Gulthias Staff",
+        "Damage Types": [
+            "bludgeoning"
+        ]
+    },
+    {
+        "Name": "Gurt's Greataxe",
+        "Damage Types": [
+            "slashing"
+        ]
+    },
+    {
+        "Name": "Halberd",
+        "Damage Types": [
+            "slashing"
+        ]
+    },
+    {
+        "Name": "Hammer of Runic Focus",
+        "Damage Types": [
+            "bludgeoning"
+        ]
+    },
+    {
+        "Name": "Hammer of Thunderbolts",
+        "Damage Types": [
+            "bludgeoning"
+        ]
+    },
+    {
+        "Name": "Hand Crossbow",
+        "Damage Types": [
+            "piercing"
+        ]
+    },
+    {
+        "Name": "Handaxe",
+        "Damage Types": [
+            "slashing"
+        ]
+    },
+    {
+        "Name": "Hazirawn",
+        "Damage Types": [
+            "slashing"
+        ]
+    },
+    {
+        "Name": "Heavy Crossbow",
+        "Damage Types": [
+            "piercing"
+        ]
+    },
+    {
+        "Name": "Heretic",
+        "Damage Types": [
+            "slashing"
+        ]
+    },
+    {
+        "Name": "Hew",
+        "Damage Types": [
+            "slashing"
+        ]
+    },
+    {
+        "Name": "Hew",
+        "Damage Types": [
+            "slashing"
+        ]
+    },
+    {
+        "Name": "Hither-Thither Staff",
+        "Damage Types": [
+            "bludgeoning"
+        ]
+    },
+    {
+        "Name": "Hooked Shortspear",
+        "Damage Types": [
+            "piercing"
+        ]
+    },
+    {
+        "Name": "Hoopak",
+        "Damage Types": [
+            "piercing"
+        ]
+    },
+    {
+        "Name": "Ignacious, the Sword of Burning Truth",
+        "Damage Types": [
+            "slashing"
+        ]
+    },
+    {
+        "Name": "Inescapable Lash",
+        "Damage Types": [
+            "slashing"
+        ]
+    },
+    {
+        "Name": "Inscrutable Staff",
+        "Damage Types": [
+            "bludgeoning"
+        ]
+    },
+    {
+        "Name": "Iron Ball",
+        "Damage Types": [
+            "bludgeoning"
+        ]
+    },
+    {
+        "Name": "Ironfang",
+        "Damage Types": [
+            "piercing"
+        ]
+    },
+    {
+        "Name": "Jakarion's Staff of Frost",
+        "Damage Types": [
+            "bludgeoning"
+        ]
+    },
+    {
+        "Name": "Javelin",
+        "Damage Types": [
+            "piercing"
+        ]
+    },
+    {
+        "Name": "Javelin of Backbiting",
+        "Damage Types": [
+            "piercing"
+        ]
+    },
+    {
+        "Name": "Javelin of Lightning",
+        "Damage Types": [
+            "piercing"
+        ]
+    },
+    {
+        "Name": "Junky +1 Dagger",
+        "Damage Types": [
+            "piercing"
+        ]
+    },
+    {
+        "Name": "Khrusor, Spear of Heliod",
+        "Damage Types": [
+            "piercing"
+        ]
+    },
+    {
+        "Name": "Knife of Stolen Resistance",
+        "Damage Types": [
+            "piercing"
+        ]
+    },
+    {
+        "Name": "Korolnor Scepter",
+        "Damage Types": [
+            "bludgeoning"
+        ]
+    },
+    {
+        "Name": "Lance",
+        "Damage Types": [
+            "piercing"
+        ]
+    },
+    {
+        "Name": "Lash of Immolation",
+        "Damage Types": [
+            "slashing"
+        ]
+    },
+    {
+        "Name": "Lash of Shadows",
+        "Damage Types": [
+            "slashing"
+        ]
+    },
+    {
+        "Name": "Lash of Shadows (Awakened)",
+        "Damage Types": [
+            "slashing"
+        ]
+    },
+    {
+        "Name": "Lash of Shadows (Dormant)",
+        "Damage Types": [
+            "slashing"
+        ]
+    },
+    {
+        "Name": "Lash of Shadows (Exalted)",
+        "Damage Types": [
+            "slashing"
+        ]
+    },
+    {
+        "Name": "Light Crossbow",
+        "Damage Types": [
+            "piercing"
+        ]
+    },
+    {
+        "Name": "Light Hammer",
+        "Damage Types": [
+            "bludgeoning"
+        ]
+    },
+    {
+        "Name": "Light Repeating Crossbow",
+        "Damage Types": [
+            "piercing"
+        ]
+    },
+    {
+        "Name": "Lightbringer",
+        "Damage Types": [
+            "bludgeoning"
+        ]
+    },
+    {
+        "Name": "Lightbringer",
+        "Damage Types": [
+            "bludgeoning"
+        ]
+    },
+    {
+        "Name": "Longbow",
+        "Damage Types": [
+            "piercing"
+        ]
+    },
+    {
+        "Name": "Longbow of the Healing Hearth",
+        "Damage Types": [
+            "piercing"
+        ]
+    },
+    {
+        "Name": "Longsword",
+        "Damage Types": [
+            "slashing"
+        ]
+    },
+    {
+        "Name": "Luminous War Pick",
+        "Damage Types": [
+            "piercing"
+        ]
+    },
+    {
+        "Name": "Mace",
+        "Damage Types": [
+            "bludgeoning"
+        ]
+    },
+    {
+        "Name": "Mace of Disruption",
+        "Damage Types": [
+            "bludgeoning"
+        ]
+    },
+    {
+        "Name": "Mace of Smiting",
+        "Damage Types": [
+            "bludgeoning"
+        ]
+    },
+    {
+        "Name": "Mace of Terror",
+        "Damage Types": [
+            "bludgeoning"
+        ]
+    },
+    {
+        "Name": "Mace of the Black Crown",
+        "Damage Types": [
+            "bludgeoning"
+        ]
+    },
+    {
+        "Name": "Mace of the Black Crown (Awakened)",
+        "Damage Types": [
+            "bludgeoning"
+        ]
+    },
+    {
+        "Name": "Mace of the Black Crown (Dormant)",
+        "Damage Types": [
+            "bludgeoning"
+        ]
+    },
+    {
+        "Name": "Mace of the Black Crown (Exalted)",
+        "Damage Types": [
+            "bludgeoning"
+        ]
+    },
+    {
+        "Name": "Macuahuitl",
+        "Damage Types": [
+            "slashing"
+        ]
+    },
+    {
+        "Name": "Magician's Judge",
+        "Damage Types": [
+            "slashing"
+        ]
+    },
+    {
+        "Name": "Mastix, Whip of Erebos",
+        "Damage Types": [
+            "slashing"
+        ]
+    },
+    {
+        "Name": "Matalotok",
+        "Damage Types": [
+            "bludgeoning"
+        ]
+    },
+    {
+        "Name": "Maul",
+        "Damage Types": [
+            "bludgeoning"
+        ]
+    },
+    {
+        "Name": "Mind Lash",
+        "Damage Types": [
+            "slashing"
+        ]
+    },
+    {
+        "Name": "Moonblade",
+        "Damage Types": [
+            "slashing"
+        ]
+    },
+    {
+        "Name": "Morningstar",
+        "Damage Types": [
+            "piercing"
+        ]
+    },
+    {
+        "Name": "Mythcarver",
+        "Damage Types": [
+            "slashing"
+        ]
+    },
+    {
+        "Name": "Mythcarver (Awakened)",
+        "Damage Types": [
+            "slashing"
+        ]
+    },
+    {
+        "Name": "Mythcarver (Dormant)",
+        "Damage Types": [
+            "slashing"
+        ]
+    },
+    {
+        "Name": "Mythcarver (Exalted)",
+        "Damage Types": [
+            "slashing"
+        ]
+    },
+    {
+        "Name": "Needle of Mending",
+        "Damage Types": [
+            "piercing"
+        ]
+    },
+    {
+        "Name": "Nepenthe",
+        "Damage Types": [
+            "slashing"
+        ]
+    },
+    {
+        "Name": "Nightbringer",
+        "Damage Types": [
+            "bludgeoning"
+        ]
+    },
+    {
+        "Name": "Oathbow",
+        "Damage Types": [
+            "piercing"
+        ]
+    },
+    {
+        "Name": "Orcsplitter",
+        "Damage Types": [
+            "slashing"
+        ]
+    },
+    {
+        "Name": "Oversized Longbow",
+        "Damage Types": [
+            "piercing"
+        ]
+    },
+    {
+        "Name": "Pathfinder's Greataxe",
+        "Damage Types": [
+            "slashing"
+        ]
+    },
+    {
+        "Name": "Piercer",
+        "Damage Types": [
+            "piercing"
+        ]
+    },
+    {
+        "Name": "Pike",
+        "Damage Types": [
+            "piercing"
+        ]
+    },
+    {
+        "Name": "Pyremaul",
+        "Damage Types": [
+            "bludgeoning"
+        ]
+    },
+    {
+        "Name": "Pyremaul (Awakened)",
+        "Damage Types": [
+            "bludgeoning"
+        ]
+    },
+    {
+        "Name": "Pyremaul (Dormant)",
+        "Damage Types": [
+            "bludgeoning"
+        ]
+    },
+    {
+        "Name": "Pyremaul (Exalted)",
+        "Damage Types": [
+            "bludgeoning"
+        ]
+    },
+    {
+        "Name": "Quarterstaff",
+        "Damage Types": [
+            "bludgeoning"
+        ]
+    },
+    {
+        "Name": "Rakdos Riteknife",
+        "Damage Types": [
+            "piercing"
+        ]
+    },
+    {
+        "Name": "Ranseur of Torture",
+        "Damage Types": [
+            "piercing"
+        ]
+    },
+    {
+        "Name": "Rapier",
+        "Damage Types": [
+            "piercing"
+        ]
+    },
+    {
+        "Name": "Reaper's Scream",
+        "Damage Types": [
+            "piercing"
+        ]
+    },
+    {
+        "Name": "Red Wizard Blade",
+        "Damage Types": [
+            "piercing"
+        ]
+    },
+    {
+        "Name": "Reszur",
+        "Damage Types": [
+            "piercing"
+        ]
+    },
+    {
+        "Name": "Rod of Seven Parts",
+        "Damage Types": [
+            "bludgeoning"
+        ]
+    },
+    {
+        "Name": "Ruin's Wake",
+        "Damage Types": [
+            "piercing"
+        ]
+    },
+    {
+        "Name": "Ruin's Wake (Awakened)",
+        "Damage Types": [
+            "piercing"
+        ]
+    },
+    {
+        "Name": "Ruin's Wake (Dormant)",
+        "Damage Types": [
+            "piercing"
+        ]
+    },
+    {
+        "Name": "Ruin's Wake (Exalted)",
+        "Damage Types": [
+            "piercing"
+        ]
+    },
+    {
+        "Name": "Ruinblade",
+        "Damage Types": [
+            "slashing"
+        ]
+    },
+    {
+        "Name": "Ruinous Flail",
+        "Damage Types": [
+            "bludgeoning"
+        ]
+    },
+    {
+        "Name": "Saint Markovia's Thighbone",
+        "Damage Types": [
+            "bludgeoning"
+        ]
+    },
+    {
+        "Name": "Sceptre of Saint Vitruvio",
+        "Damage Types": [
+            "bludgeoning"
+        ]
+    },
+    {
+        "Name": "Scimitar",
+        "Damage Types": [
+            "slashing"
+        ]
+    },
+    {
+        "Name": "Scimitar of Speed",
+        "Damage Types": [
+            "slashing"
+        ]
+    },
+    {
+        "Name": "Scourge of Shadow",
+        "Damage Types": [
+            "slashing"
+        ]
+    },
+    {
+        "Name": "Seeker Dart",
+        "Damage Types": [
+            "piercing"
+        ]
+    },
+    {
+        "Name": "Serpent's Fang",
+        "Damage Types": [
+            "slashing"
+        ]
+    },
+    {
+        "Name": "Shatterspike",
+        "Damage Types": [
+            "slashing"
+        ]
+    },
+    {
+        "Name": "Shortbow",
+        "Damage Types": [
+            "piercing"
+        ]
+    },
+    {
+        "Name": "Shortsword",
+        "Damage Types": [
+            "piercing"
+        ]
+    },
+    {
+        "Name": "Sickle",
+        "Damage Types": [
+            "slashing"
+        ]
+    },
+    {
+        "Name": "Silken Spite",
+        "Damage Types": [
+            "piercing"
+        ]
+    },
+    {
+        "Name": "Silken Spite (Awakened)",
+        "Damage Types": [
+            "piercing"
+        ]
+    },
+    {
+        "Name": "Silken Spite (Dormant)",
+        "Damage Types": [
+            "piercing"
+        ]
+    },
+    {
+        "Name": "Silken Spite (Exalted)",
+        "Damage Types": [
+            "piercing"
+        ]
+    },
+    {
+        "Name": "Silver Sword",
+        "Damage Types": [
+            "slashing"
+        ]
+    },
+    {
+        "Name": "Skyblinder Staff",
+        "Damage Types": [
+            "bludgeoning"
+        ]
+    },
+    {
+        "Name": "Skymetal Staff",
+        "Damage Types": [
+            "bludgeoning"
+        ]
+    },
+    {
+        "Name": "Skysail",
+        "Damage Types": [
+            "bludgeoning"
+        ]
+    },
+    {
+        "Name": "Sling",
+        "Damage Types": [
+            "bludgeoning"
+        ]
+    },
+    {
+        "Name": "Sling of Giant Felling",
+        "Damage Types": [
+            "bludgeoning"
+        ]
+    },
+    {
+        "Name": "Snicker-Snack",
+        "Damage Types": [
+            "slashing"
+        ]
+    },
+    {
+        "Name": "Spear",
+        "Damage Types": [
+            "piercing"
+        ]
+    },
+    {
+        "Name": "Spear of Backbiting",
+        "Damage Types": [
+            "piercing"
+        ]
+    },
+    {
+        "Name": "Spider Staff",
+        "Damage Types": [
+            "bludgeoning"
+        ]
+    },
+    {
+        "Name": "Spider Staff",
+        "Damage Types": [
+            "bludgeoning"
+        ]
+    },
+    {
+        "Name": "Spire of Conflux",
+        "Damage Types": [
+            "bludgeoning"
+        ]
+    },
+    {
+        "Name": "Spire of Conflux (Awakened)",
+        "Damage Types": [
+            "bludgeoning"
+        ]
+    },
+    {
+        "Name": "Spire of Conflux (Dormant)",
+        "Damage Types": [
+            "bludgeoning"
+        ]
+    },
+    {
+        "Name": "Spire of Conflux (Exalted)",
+        "Damage Types": [
+            "bludgeoning"
+        ]
+    },
+    {
+        "Name": "Staff",
+        "Damage Types": [
+            "bludgeoning"
+        ]
+    },
+    {
+        "Name": "Staff of Adornment",
+        "Damage Types": [
+            "bludgeoning"
+        ]
+    },
+    {
+        "Name": "Staff of Birdcalls",
+        "Damage Types": [
+            "bludgeoning"
+        ]
+    },
+    {
+        "Name": "Staff of Charming",
+        "Damage Types": [
+            "bludgeoning"
+        ]
+    },
+    {
+        "Name": "Staff of Contaminated Power",
+        "Damage Types": [
+            "bludgeoning"
+        ]
+    },
+    {
+        "Name": "Staff of Defense",
+        "Damage Types": [
+            "bludgeoning"
+        ]
+    },
+    {
+        "Name": "Staff of Defense",
+        "Damage Types": [
+            "bludgeoning"
+        ]
+    },
+    {
+        "Name": "Staff of Dunamancy",
+        "Damage Types": [
+            "bludgeoning"
+        ]
+    },
+    {
+        "Name": "Staff of Fate",
+        "Damage Types": [
+            "bludgeoning"
+        ]
+    },
+    {
+        "Name": "Staff of Fire",
+        "Damage Types": [
+            "bludgeoning"
+        ]
+    },
+    {
+        "Name": "Staff of Flowers",
+        "Damage Types": [
+            "bludgeoning"
+        ]
+    },
+    {
+        "Name": "Staff of Frost",
+        "Damage Types": [
+            "bludgeoning"
+        ]
+    },
+    {
+        "Name": "Staff of Healing",
+        "Damage Types": [
+            "bludgeoning"
+        ]
+    },
+    {
+        "Name": "Staff of Power",
+        "Damage Types": [
+            "bludgeoning"
+        ]
+    },
+    {
+        "Name": "Staff of Ruling",
+        "Damage Types": [
+            "bludgeoning"
+        ]
+    },
+    {
+        "Name": "Staff of Striking",
+        "Damage Types": [
+            "bludgeoning"
+        ]
+    },
+    {
+        "Name": "Staff of Swarming Insects",
+        "Damage Types": [
+            "bludgeoning"
+        ]
+    },
+    {
+        "Name": "Staff of Thunder and Lightning",
+        "Damage Types": [
+            "bludgeoning"
+        ]
+    },
+    {
+        "Name": "Staff of Withering",
+        "Damage Types": [
+            "bludgeoning"
+        ]
+    },
+    {
+        "Name": "Staff of the Adder",
+        "Damage Types": [
+            "bludgeoning"
+        ]
+    },
+    {
+        "Name": "Staff of the Forgotten One",
+        "Damage Types": [
+            "bludgeoning"
+        ]
+    },
+    {
+        "Name": "Staff of the Ivory Claw",
+        "Damage Types": [
+            "bludgeoning"
+        ]
+    },
+    {
+        "Name": "Staff of the Magi",
+        "Damage Types": [
+            "bludgeoning"
+        ]
+    },
+    {
+        "Name": "Staff of the Python",
+        "Damage Types": [
+            "bludgeoning"
+        ]
+    },
+    {
+        "Name": "Staff of the Rooted Hills",
+        "Damage Types": [
+            "bludgeoning"
+        ]
+    },
+    {
+        "Name": "Staff of the Woodlands",
+        "Damage Types": [
+            "bludgeoning"
+        ]
+    },
+    {
+        "Name": "Star Razor",
+        "Damage Types": [
+            "slashing"
+        ]
+    },
+    {
+        "Name": "Star Razor (Awakened)",
+        "Damage Types": [
+            "slashing"
+        ]
+    },
+    {
+        "Name": "Star Razor (Dormant)",
+        "Damage Types": [
+            "slashing"
+        ]
+    },
+    {
+        "Name": "Star Razor (Exalted)",
+        "Damage Types": [
+            "slashing"
+        ]
+    },
+    {
+        "Name": "Steel",
+        "Damage Types": [
+            "slashing"
+        ]
+    },
+    {
+        "Name": "Stonemaker War Pick",
+        "Damage Types": [
+            "piercing"
+        ]
+    },
+    {
+        "Name": "Storm Boomerang",
+        "Damage Types": [
+            "bludgeoning"
+        ]
+    },
+    {
+        "Name": "Summer's Dance",
+        "Damage Types": [
+            "slashing"
+        ]
+    },
+    {
+        "Name": "Sun Blade",
+        "Damage Types": [
+            "radiant"
+        ]
+    },
+    {
+        "Name": "Sun Staff",
+        "Damage Types": [
+            "bludgeoning"
+        ]
+    },
+    {
+        "Name": "Sunforger",
+        "Damage Types": [
+            "bludgeoning"
+        ]
+    },
+    {
+        "Name": "Sunsword",
+        "Damage Types": [
+            "radiant"
+        ]
+    },
+    {
+        "Name": "Sword of Answering",
+        "Damage Types": [
+            "slashing"
+        ]
+    },
+    {
+        "Name": "Sword of Answering (Answerer)",
+        "Damage Types": [
+            "slashing"
+        ]
+    },
+    {
+        "Name": "Sword of Answering (Back Talker)",
+        "Damage Types": [
+            "slashing"
+        ]
+    },
+    {
+        "Name": "Sword of Answering (Concluder)",
+        "Damage Types": [
+            "slashing"
+        ]
+    },
+    {
+        "Name": "Sword of Answering (Last Quip)",
+        "Damage Types": [
+            "slashing"
+        ]
+    },
+    {
+        "Name": "Sword of Answering (Rebutter)",
+        "Damage Types": [
+            "slashing"
+        ]
+    },
+    {
+        "Name": "Sword of Answering (Replier)",
+        "Damage Types": [
+            "slashing"
+        ]
+    },
+    {
+        "Name": "Sword of Answering (Retorter)",
+        "Damage Types": [
+            "slashing"
+        ]
+    },
+    {
+        "Name": "Sword of Answering (Scather)",
+        "Damage Types": [
+            "slashing"
+        ]
+    },
+    {
+        "Name": "Sword of Answering (Squelcher)",
+        "Damage Types": [
+            "slashing"
+        ]
+    },
+    {
+        "Name": "Sword of Kas",
+        "Damage Types": [
+            "slashing"
+        ]
+    },
+    {
+        "Name": "Sword of Zariel",
+        "Damage Types": [
+            "slashing"
+        ]
+    },
+    {
+        "Name": "Sword of the Paruns",
+        "Damage Types": [
+            "slashing"
+        ]
+    },
+    {
+        "Name": "Tearulai",
+        "Damage Types": [
+            "slashing"
+        ]
+    },
+    {
+        "Name": "The Bloody End",
+        "Damage Types": [
+            "piercing"
+        ]
+    },
+    {
+        "Name": "The Bloody End (Awakened)",
+        "Damage Types": [
+            "piercing"
+        ]
+    },
+    {
+        "Name": "The Bloody End (Dormant)",
+        "Damage Types": [
+            "piercing"
+        ]
+    },
+    {
+        "Name": "The Bloody End (Exalted)",
+        "Damage Types": [
+            "piercing"
+        ]
+    },
+    {
+        "Name": "Tidecaller Trident",
+        "Damage Types": [
+            "piercing"
+        ]
+    },
+    {
+        "Name": "Tinderstrike",
+        "Damage Types": [
+            "piercing"
+        ]
+    },
+    {
+        "Name": "Tinkertop Boltblaster 1000",
+        "Damage Types": [
+            "piercing"
+        ]
+    },
+    {
+        "Name": "Topaz Annihilator",
+        "Damage Types": [
+            "necrotic"
+        ]
+    },
+    {
+        "Name": "Trident",
+        "Damage Types": [
+            "piercing"
+        ]
+    },
+    {
+        "Name": "Trident of Fish Command",
+        "Damage Types": [
+            "piercing"
+        ]
+    },
+    {
+        "Name": "True-Ice Shards (Dagger)",
+        "Damage Types": [
+            "cold"
+        ]
+    },
+    {
+        "Name": "True-Ice Shards (Rapier)",
+        "Damage Types": [
+            "cold"
+        ]
+    },
+    {
+        "Name": "Two-Birds Sling",
+        "Damage Types": [
+            "bludgeoning"
+        ]
+    },
+    {
+        "Name": "Voyager Staff",
+        "Damage Types": [
+            "bludgeoning"
+        ]
+    },
+    {
+        "Name": "Wand of Orcus",
+        "Damage Types": [
+            "bludgeoning"
+        ]
+    },
+    {
+        "Name": "War Pick",
+        "Damage Types": [
+            "piercing"
+        ]
+    },
+    {
+        "Name": "Warhammer",
+        "Damage Types": [
+            "bludgeoning"
+        ]
+    },
+    {
+        "Name": "Wave",
+        "Damage Types": [
+            "piercing"
+        ]
+    },
+    {
+        "Name": "Waythe",
+        "Damage Types": [
+            "slashing"
+        ]
+    },
+    {
+        "Name": "Whelm",
+        "Damage Types": [
+            "bludgeoning"
+        ]
+    },
+    {
+        "Name": "Whip",
+        "Damage Types": [
+            "slashing"
+        ]
+    },
+    {
+        "Name": "Whisper",
+        "Damage Types": [
+            "piercing"
+        ]
+    },
+    {
+        "Name": "Whisper (Awakened)",
+        "Damage Types": [
+            "piercing"
+        ]
+    },
+    {
+        "Name": "Whisper (Dormant)",
+        "Damage Types": [
+            "piercing"
+        ]
+    },
+    {
+        "Name": "Whisper (Exalted)",
+        "Damage Types": [
+            "piercing"
+        ]
+    },
+    {
+        "Name": "Will of the Talon",
+        "Damage Types": [
+            "piercing"
+        ]
+    },
+    {
+        "Name": "Will of the Talon (Awakened)",
+        "Damage Types": [
+            "piercing"
+        ]
+    },
+    {
+        "Name": "Will of the Talon (Dormant)",
+        "Damage Types": [
+            "piercing"
+        ]
+    },
+    {
+        "Name": "Will of the Talon (Exalted)",
+        "Damage Types": [
+            "piercing"
+        ]
+    },
+    {
+        "Name": "Windvane",
+        "Damage Types": [
+            "piercing"
+        ]
+    },
+    {
+        "Name": "Winter's Dark Bite",
+        "Damage Types": [
+            "slashing"
+        ]
+    },
+    {
+        "Name": "Woodcutter's Axe",
+        "Damage Types": [
+            "slashing"
+        ]
+    },
+    {
+        "Name": "Wooden Staff",
+        "Damage Types": [
+            "bludgeoning"
+        ]
+    },
+    {
+        "Name": "Wrought-Iron Tower",
+        "Damage Types": [
+            "bludgeoning"
+        ]
+    },
+    {
+        "Name": "Wyllow's Staff of Flowers",
+        "Damage Types": [
+            "bludgeoning"
+        ]
+    },
+    {
+        "Name": "Yester Hill Axe",
+        "Damage Types": [
+            "slashing"
+        ]
+    },
+    {
+        "Name": "Yklwa",
+        "Damage Types": [
+            "piercing"
+        ]
+    }
 ]
