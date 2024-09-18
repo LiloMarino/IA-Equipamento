@@ -16,7 +16,13 @@ def create_enemies(data):
     """Criar objetos Enemy a partir dos dados carregados."""
     enemies = []
     for enemy_data in data:
-        enemy = Enemy(enemy_data["name"], enemy_data["weaknesses"])
+        enemy = Enemy(
+            enemy_data["name"],
+            enemy_data["vulnerabilities"],
+            enemy_data["resistances"],
+            enemy_data["immunities"],
+            enemy_data["condition_immunities"],
+        )
         enemies.append(enemy)
     return enemies
 
@@ -31,11 +37,36 @@ def create_items(data):
 
 
 def create_rules(enemy):
-    """Criar regras de correspondência entre fraquezas e itens."""
+    """Criar regras de correspondência entre vulnerabilidades, fraquezas, resistência e itens."""
     rules = []
-    for weakness in enemy.weaknesses:
-        rule = Rule(enemy_weakness=weakness, item_property=weakness)
-        rules.append(rule)
+    # Criar regras para vulnerabilidades
+    for vulnerability in enemy.vulnerabilities:
+        rules.append(
+            Rule(
+                enemy_attribute=vulnerability,
+                item_property=vulnerability,
+                effect_type="vulnerability",
+            )
+        )
+
+    # Criar regras para resistências
+    for resistance in enemy.resistances:
+        rules.append(
+            Rule(
+                enemy_attribute=resistance,
+                item_property=resistance,
+                effect_type="resistance",
+            )
+        )
+
+    # Criar regras para imunidades
+    for immunity in enemy.immunities:
+        rules.append(
+            Rule(
+                enemy_attribute=immunity, item_property=immunity, effect_type="immunity"
+            )
+        )
+
     return rules
 
 

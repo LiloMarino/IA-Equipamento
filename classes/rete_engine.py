@@ -10,16 +10,20 @@ class ReteEngine:
     def match(self, enemy, items):
         matched_items = []
         for item in items:
-            # Calcula a pontuação com base no número de regras que correspondem ao item
-            score = sum(1 for rule in self.rules if rule.matches(enemy, item))
+            score = 0
+            for rule in self.rules:
+                if rule.effect_type == "vulnerability" and rule.matches(enemy, item):
+                    score += 2  # Dê mais peso para vulnerabilidades
+                elif rule.effect_type == "resistance" and rule.matches(enemy, item):
+                    score -= 1  # Reduza a pontuação por resistências
+                elif rule.effect_type == "immunity" and rule.matches(enemy, item):
+                    score = 0  # Zere a pontuação se houver imunidade
             if score > 0:
                 matched_items.append((item, score))
         return matched_items
 
     def run(self, enemy, items):
         applicable_items = self.match(enemy, items)
-        # Ordenar itens por maior pontuação
         applicable_items.sort(key=lambda x: x[1], reverse=True)
-        # Retorna uma lista com os nomes dos itens
         recommendations = [item.name for item, score in applicable_items]
         return recommendations

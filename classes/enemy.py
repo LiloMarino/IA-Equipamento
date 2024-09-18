@@ -5,4 +5,7 @@ from typing import List
 @dataclass
 class Enemy:
     name: str
-    weaknesses: List[str]
+    vulnerabilities: List[str]
+    resistances: List[str]
+    immunities: List[str]
+    condition_immunities: List[str]

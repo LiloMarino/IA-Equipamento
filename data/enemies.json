@@ -1,5 +1,10 @@
 [
-    {"name": "Dragon", "weaknesses": ["ice", "piercing", "magic"]},
-    {"name": "Goblin", "weaknesses": ["fire", "slashing"]},
-    {"name": "Zombie", "weaknesses": ["holy", "fire"]}
+    {
+        "name": "Dragon",
+        "vulnerabilities": ["ice", "piercing"],
+        "resistances": ["fire"],
+        "immunities": ["poison"],
+        "condition_immunities": ["stun"]
+    }
+    
 ]
