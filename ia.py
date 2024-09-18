@@ -5,6 +5,7 @@ from classes.enemy import Enemy
 from classes.item import Item
 from classes.rete_engine import ReteEngine
 from classes.rule import Rule
+from classes.spell import Spell
 
 
 def load_data(file_path):
@@ -37,9 +38,23 @@ def create_items(data):
     return items
 
 
+def create_spells(data):
+    """Criar objetos Spell a partir dos dados carregados."""
+    spells = []
+    for spell_data in data:
+        spell = Spell(
+            spell_data["Name"],
+            spell_data["Damage Types"],
+            spell_data["Conditions Inflicted"],
+        )
+        spells.append(spell)
+    return spells
+
+
 def create_rules(enemy):
-    """Criar regras de correspondência entre vulnerabilidades, fraquezas, resistência e itens."""
+    """Criar regras de correspondência entre vulnerabilidades, fraquezas, resistência e itens e magias."""
     rules = []
+
     # Criar regras para vulnerabilidades
     for vulnerability in enemy.vulnerabilities:
         rules.append(
@@ -68,6 +83,15 @@ def create_rules(enemy):
             )
         )
 
+    # Criar regras para condições infligidas por magias
+    for condition in enemy.condition_immunities:
+        rules.append(
+            Rule(
+                enemy_attribute=condition,
+                item_property=condition,
+                effect_type="condition_immunity",
+            )
+        )
     return rules
 
 
@@ -125,8 +149,62 @@ def display_recommended_items(stdscr, selected_enemy, items):
         stdscr.refresh()
 
 
-def curses_menu(stdscr, enemies, items):
-    """Função para criar a CLI interativa com curses com paginação."""
+def display_recommended_spells(stdscr, selected_enemy, spells):
+    """Função para exibir as magias recomendadas com pontuação, com paginação."""
+    SPELLS_PER_PAGE = 10
+    current_row = 0
+    page = 0
+
+    # Criar as regras e executar o motor de inferência
+    rules = create_rules(selected_enemy)
+    rete_engine = ReteEngine(rules)
+    spell_recommendations_with_score = rete_engine.run(selected_enemy, spells)
+    TOTAL_PAGES = (len(spell_recommendations_with_score) - 1) // SPELLS_PER_PAGE + 1
+
+    while True:
+        stdscr.clear()
+        stdscr.addstr(0, 0, f"Inimigo selecionado: {selected_enemy.name}")
+        stdscr.addstr(
+            1, 0, f"Magias recomendadas (com pontuação): Página {page+1}/{TOTAL_PAGES}"
+        )
+
+        # Paginando as magias recomendadas
+        start_idx = page * SPELLS_PER_PAGE
+        end_idx = start_idx + SPELLS_PER_PAGE
+        current_page_spells = spell_recommendations_with_score[start_idx:end_idx]
+
+        # Exibir as magias recomendadas da página atual, destacando a selecionada
+        for idx, (spell, score) in enumerate(current_page_spells):
+            if idx == current_row:
+                stdscr.attron(curses.color_pair(1))  # Destacar a linha selecionada
+                stdscr.addstr(idx + 2, 0, f"{spell.name} (Score: {score})")
+                stdscr.attroff(curses.color_pair(1))  # Remover o destaque
+            else:
+                stdscr.addstr(idx + 2, 0, f"{spell.name} (Score: {score})")
+
+        stdscr.addstr(len(current_page_spells) + 3, 0, "Aperte ESC para voltar")
+
+        # Obter a tecla pressionada
+        key = stdscr.getch()
+
+        if key == 450 and current_row > 0:  # KEY UP
+            current_row -= 1
+        elif key == 456 and current_row < len(current_page_spells) - 1:  # KEY DOWN
+            current_row += 1
+        elif key == 454 and page < TOTAL_PAGES - 1:  # Próxima página
+            page += 1
+            current_row = 0  # Reseta a posição do cursor na nova página
+        elif key == 452 and page > 0:  # Página anterior
+            page -= 1
+            current_row = 0  # Reseta a posição do cursor na nova página
+        elif key == 27:  # Tecla ESC para voltar ao menu anterior
+            break
+
+        stdscr.refresh()
+
+
+def curses_menu(stdscr, enemies, items, spells):
+    """Função para criar a CLI interativa com curses e incluir magias no sistema de recomendação."""
     ITEMS_PER_PAGE = 10
     TOTAL_PAGES = (len(enemies) - 1) // ITEMS_PER_PAGE + 1
     curses.curs_set(0)
@@ -161,15 +239,29 @@ def curses_menu(stdscr, enemies, items):
             current_row -= 1
         elif key == 456 and current_row < len(current_page_enemies) - 1:  # KEY DOWN
             current_row += 1
-        elif key == 454 and page < TOTAL_PAGES - 1:  # Próxima página
+        elif key == 454 and page < TOTAL_PAGES - 1:  # Ir para a próxima página
             page += 1
             current_row = 0  # Reseta a posição do cursor na nova página
-        elif key == 452 and page > 0:  # Página anterior
+        elif key == 452 and page > 0:  # Ir para a página anterior
             page -= 1
             current_row = 0  # Reseta a posição do cursor na nova página
         elif key == curses.KEY_ENTER or key in [10, 13]:  # Enter
             selected_enemy = current_page_enemies[current_row]
+            stdscr.clear()
+            stdscr.addstr(0, 0, f"Inimigo selecionado: {selected_enemy.name}")
+            stdscr.addstr(1, 0, "Recomendações de itens e magias (com pontuação):")
+
+            # Criar as regras e executar o motor de inferência
+            rules = create_rules(selected_enemy)
+            rete_engine = ReteEngine(rules)
+
+            # Executar para itens
+            recommendations_with_score = rete_engine.run(selected_enemy, items)
             display_recommended_items(stdscr, selected_enemy, items)
+
+            # Executar para magias
+            display_recommended_spells(stdscr, selected_enemy, spells)
+
         elif key == 27:  # Tecla ESC para encerrar o programa
             break
 
@@ -183,16 +275,18 @@ def main(stdscr):
         1, curses.COLOR_GREEN, curses.COLOR_BLACK
     )  # Destaque (fundo branco e texto preto)
 
-    # Carregar os dados de inimigos e itens a partir dos arquivos JSON
+    # Carregar os dados de inimigos, itens e magias a partir dos arquivos JSON
     enemies_data = load_data("data/enemies.json")
     items_data = load_data("data/items.json")
+    spells_data = load_data("data/spells.json")
 
-    # Criar objetos Enemy e Item
+    # Criar objetos Enemy, Item e Spell
     enemies = create_enemies(enemies_data)
     items = create_items(items_data)
+    spells = create_spells(spells_data)
 
     # Executar a interface CLI interativa
-    curses_menu(stdscr, enemies, items)
+    curses_menu(stdscr, enemies, items, spells)
 
 
 if __name__ == "__main__":

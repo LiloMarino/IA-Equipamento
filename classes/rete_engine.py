@@ -19,6 +19,10 @@ class ReteEngine:
                     score -= 1  # Reduza a pontuação por resistências
                 elif rule.effect_type == "immunity" and rule.matches(enemy, item):
                     score = 0  # Zere a pontuação se houver imunidade
+                elif rule.effect_type == "condition_immunity" and rule.matches(
+                    enemy, item
+                ):
+                    score += 1  # Pontuação extra para condições infligidas por magias, se aplicável
             if score > 0:
                 matched_items.append((item, score))
         return matched_items
