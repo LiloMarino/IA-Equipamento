@@ -17,11 +17,11 @@ def create_enemies(data):
     enemies = []
     for enemy_data in data:
         enemy = Enemy(
-            enemy_data["name"],
-            enemy_data["vulnerabilities"],
-            enemy_data["resistances"],
-            enemy_data["immunities"],
-            enemy_data["condition_immunities"],
+            enemy_data["Name"],
+            enemy_data["Damage Vulnerabilities"],
+            enemy_data["Damage Resistances"],
+            enemy_data["Damage Immunities"],
+            enemy_data["Condition Immunities"],
         )
         enemies.append(enemy)
     return enemies

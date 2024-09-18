@@ -1,10 +1,3009 @@
 [
     {
-        "name": "Dragon",
-        "vulnerabilities": ["ice", "piercing"],
-        "resistances": ["fire"],
-        "immunities": ["poison"],
-        "condition_immunities": ["stun"]
+        "Name": "Amonkhet Mummy",
+        "Damage Vulnerabilities": [
+            "fire"
+        ],
+        "Damage Resistances": [
+            "bludgeoning",
+            "piercing",
+            "slashing"
+        ],
+        "Damage Immunities": [
+            "necrotic",
+            "poison"
+        ],
+        "Condition Immunities": [
+            "charmed",
+            "exhaustion",
+            "frightened",
+            "paralyzed",
+            "poisoned"
+        ]
+    },
+    {
+        "Name": "Amonkhet Mummy Lord",
+        "Damage Vulnerabilities": [
+            "fire"
+        ],
+        "Damage Resistances": [],
+        "Damage Immunities": [
+            "necrotic",
+            "poison",
+            "bludgeoning",
+            "piercing",
+            "slashing"
+        ],
+        "Condition Immunities": [
+            "charmed",
+            "exhaustion",
+            "frightened",
+            "paralyzed",
+            "poisoned"
+        ]
+    },
+    {
+        "Name": "Animated Tree",
+        "Damage Vulnerabilities": [
+            "fire"
+        ],
+        "Damage Resistances": [
+            "bludgeoning",
+            "piercing",
+            "necrotic",
+            "radiant"
+        ],
+        "Damage Immunities": [],
+        "Condition Immunities": []
+    },
+    {
+        "Name": "Apau Perape Demon",
+        "Damage Vulnerabilities": [
+            "cold"
+        ],
+        "Damage Resistances": [
+            "fire",
+            "lightning",
+            "bludgeoning",
+            "piercing",
+            "slashing"
+        ],
+        "Damage Immunities": [
+            "poison"
+        ],
+        "Condition Immunities": [
+            "frightened",
+            "poisoned"
+        ]
+    },
+    {
+        "Name": "Arch-Devil Ia'Affrat",
+        "Damage Vulnerabilities": [
+            "cold"
+        ],
+        "Damage Resistances": [],
+        "Damage Immunities": [
+            "bludgeoning",
+            "fire",
+            "piercing",
+            "poison",
+            "slashing"
+        ],
+        "Condition Immunities": [
+            "charmed",
+            "frightened",
+            "paralyzed",
+            "petrified",
+            "poisoned",
+            "prone",
+            "restrained",
+            "stunned"
+        ]
+    },
+    {
+        "Name": "Ashsnake",
+        "Damage Vulnerabilities": [
+            "cold"
+        ],
+        "Damage Resistances": [
+            "fire"
+        ],
+        "Damage Immunities": [],
+        "Condition Immunities": []
+    },
+    {
+        "Name": "Atropal",
+        "Damage Vulnerabilities": [
+            "radiant"
+        ],
+        "Damage Resistances": [],
+        "Damage Immunities": [
+            "cold",
+            "necrotic",
+            "bludgeoning",
+            "piercing",
+            "slashing"
+        ],
+        "Condition Immunities": [
+            "charmed",
+            "exhaustion",
+            "frightened",
+            "poisoned"
+        ]
+    },
+    {
+        "Name": "Avatar of Baalzebul",
+        "Damage Vulnerabilities": [
+            "radiant"
+        ],
+        "Damage Resistances": [
+            "acid",
+            "cold",
+            "bludgeoning",
+            "piercing",
+            "slashing"
+        ],
+        "Damage Immunities": [
+            "fire",
+            "poison"
+        ],
+        "Condition Immunities": [
+            "charmed",
+            "poisoned"
+        ]
+    },
+    {
+        "Name": "Awakened Shrub",
+        "Damage Vulnerabilities": [
+            "fire"
+        ],
+        "Damage Resistances": [
+            "piercing"
+        ],
+        "Damage Immunities": [],
+        "Condition Immunities": []
+    },
+    {
+        "Name": "Awakened Shrub Totem Elemental",
+        "Damage Vulnerabilities": [
+            "fire"
+        ],
+        "Damage Resistances": [
+            "piercing"
+        ],
+        "Damage Immunities": [],
+        "Condition Immunities": []
+    },
+    {
+        "Name": "Awakened Tree",
+        "Damage Vulnerabilities": [
+            "fire"
+        ],
+        "Damage Resistances": [
+            "bludgeoning",
+            "piercing"
+        ],
+        "Damage Immunities": [],
+        "Condition Immunities": []
+    },
+    {
+        "Name": "Awakened Zurkhwood",
+        "Damage Vulnerabilities": [
+            "fire"
+        ],
+        "Damage Resistances": [
+            "bludgeoning",
+            "piercing"
+        ],
+        "Damage Immunities": [],
+        "Condition Immunities": []
+    },
+    {
+        "Name": "Beli",
+        "Damage Vulnerabilities": [
+            "fire"
+        ],
+        "Damage Resistances": [],
+        "Damage Immunities": [
+            "cold"
+        ],
+        "Condition Immunities": []
+    },
+    {
+        "Name": "Birdfolk Skeleton",
+        "Damage Vulnerabilities": [
+            "bludgeoning"
+        ],
+        "Damage Resistances": [],
+        "Damage Immunities": [
+            "poison"
+        ],
+        "Condition Immunities": [
+            "exhaustion",
+            "poisoned"
+        ]
+    },
+    {
+        "Name": "Blighted Sapling",
+        "Damage Vulnerabilities": [
+            "fire"
+        ],
+        "Damage Resistances": [
+            "necrotic",
+            "poison"
+        ],
+        "Damage Immunities": [],
+        "Condition Immunities": [
+            "blinded",
+            "deafened",
+            "poisoned"
+        ]
+    },
+    {
+        "Name": "Bloodbonded",
+        "Damage Vulnerabilities": [
+            "psychic"
+        ],
+        "Damage Resistances": [
+            "necrotic",
+            "radiant"
+        ],
+        "Damage Immunities": [],
+        "Condition Immunities": [
+            "charmed",
+            "frightened"
+        ]
+    },
+    {
+        "Name": "Bodytaker Plant",
+        "Damage Vulnerabilities": [
+            "poison"
+        ],
+        "Damage Resistances": [],
+        "Damage Immunities": [],
+        "Condition Immunities": [
+            "blinded",
+            "charmed",
+            "frightened",
+            "prone"
+        ]
+    },
+    {
+        "Name": "Bone Roc",
+        "Damage Vulnerabilities": [
+            "bludgeoning"
+        ],
+        "Damage Resistances": [],
+        "Damage Immunities": [
+            "poison"
+        ],
+        "Condition Immunities": [
+            "exhaustion",
+            "poisoned"
+        ]
+    },
+    {
+        "Name": "Bone Swarm",
+        "Damage Vulnerabilities": [
+            "bludgeoning"
+        ],
+        "Damage Resistances": [
+            "piercing",
+            "slashing"
+        ],
+        "Damage Immunities": [
+            "poison"
+        ],
+        "Condition Immunities": [
+            "charmed",
+            "exhaustion",
+            "frightened",
+            "grappled",
+            "paralyzed",
+            "petrified",
+            "poisoned",
+            "prone",
+            "restrained",
+            "stunned"
+        ]
+    },
+    {
+        "Name": "Breath Drinker",
+        "Damage Vulnerabilities": [
+            "necrotic"
+        ],
+        "Damage Resistances": [
+            "acid",
+            "cold",
+            "fire",
+            "lightning",
+            "thunder",
+            "bludgeoning",
+            "piercing",
+            "slashing"
+        ],
+        "Damage Immunities": [
+            "poison",
+            "radiant"
+        ],
+        "Condition Immunities": [
+            "grappled",
+            "paralyzed",
+            "petrified",
+            "poisoned",
+            "prone",
+            "restrained"
+        ]
+    },
+    {
+        "Name": "Cactid",
+        "Damage Vulnerabilities": [
+            "fire"
+        ],
+        "Damage Resistances": [
+            "bludgeoning",
+            "piercing"
+        ],
+        "Damage Immunities": [],
+        "Condition Immunities": [
+            "blinded",
+            "deafened"
+        ]
+    },
+    {
+        "Name": "Centaur Mummy",
+        "Damage Vulnerabilities": [
+            "fire"
+        ],
+        "Damage Resistances": [
+            "bludgeoning",
+            "piercing",
+            "slashing"
+        ],
+        "Damage Immunities": [
+            "necrotic",
+            "poison"
+        ],
+        "Condition Immunities": [
+            "charmed",
+            "exhaustion",
+            "frightened",
+            "paralyzed",
+            "poisoned"
+        ]
+    },
+    {
+        "Name": "Centaur Skeleton",
+        "Damage Vulnerabilities": [
+            "bludgeoning"
+        ],
+        "Damage Resistances": [],
+        "Damage Immunities": [
+            "poison"
+        ],
+        "Condition Immunities": [
+            "exhaustion",
+            "poisoned"
+        ]
+    },
+    {
+        "Name": "Child of the Briar",
+        "Damage Vulnerabilities": [
+            "fire"
+        ],
+        "Damage Resistances": [],
+        "Damage Immunities": [],
+        "Condition Immunities": []
+    },
+    {
+        "Name": "Citrullus",
+        "Damage Vulnerabilities": [
+            "bludgeoning"
+        ],
+        "Damage Resistances": [],
+        "Damage Immunities": [
+            "acid"
+        ],
+        "Condition Immunities": []
+    },
+    {
+        "Name": "Cold Snap Spirit",
+        "Damage Vulnerabilities": [
+            "fire"
+        ],
+        "Damage Resistances": [
+            "slashing",
+            "piercing"
+        ],
+        "Damage Immunities": [
+            "cold",
+            "poison"
+        ],
+        "Condition Immunities": [
+            "charmed",
+            "frightened",
+            "paralyzed",
+            "poisoned",
+            "stunned"
+        ]
+    },
+    {
+        "Name": "Core Spawn Worm",
+        "Damage Vulnerabilities": [
+            "cold"
+        ],
+        "Damage Resistances": [],
+        "Damage Immunities": [
+            "fire",
+            "psychic"
+        ],
+        "Condition Immunities": [
+            "charmed",
+            "frightened"
+        ]
+    },
+    {
+        "Name": "Corrupted Ushabti",
+        "Damage Vulnerabilities": [
+            "fire"
+        ],
+        "Damage Resistances": [
+            "bludgeoning",
+            "piercing",
+            "slashing"
+        ],
+        "Damage Immunities": [
+            "necrotic",
+            "poison"
+        ],
+        "Condition Immunities": [
+            "charmed",
+            "exhaustion",
+            "frightened",
+            "paralyzed",
+            "petrified",
+            "poisoned",
+            "stunned"
+        ]
+    },
+    {
+        "Name": "Cryonax",
+        "Damage Vulnerabilities": [
+            "fire"
+        ],
+        "Damage Resistances": [
+            "bludgeoning",
+            "piercing",
+            "slashing"
+        ],
+        "Damage Immunities": [
+            "cold",
+            "poison"
+        ],
+        "Condition Immunities": [
+            "charmed",
+            "frightened",
+            "paralyzed",
+            "petrified",
+            "poisoned",
+            "prone"
+        ]
+    },
+    {
+        "Name": "Death Butterfly Swarm",
+        "Damage Vulnerabilities": [
+            "cold",
+            "fire"
+        ],
+        "Damage Resistances": [
+            "bludgeoning",
+            "piercing",
+            "slashing"
+        ],
+        "Damage Immunities": [],
+        "Condition Immunities": [
+            "charmed",
+            "frightened",
+            "grappled",
+            "paralyzed",
+            "petrified",
+            "poisoned",
+            "prone",
+            "restrained",
+            "stunned"
+        ]
+    },
+    {
+        "Name": "Deep One",
+        "Damage Vulnerabilities": [
+            "fire"
+        ],
+        "Damage Resistances": [
+            "cold"
+        ],
+        "Damage Immunities": [],
+        "Condition Immunities": []
+    },
+    {
+        "Name": "Deep One Archimandrite",
+        "Damage Vulnerabilities": [
+            "fire"
+        ],
+        "Damage Resistances": [
+            "cold",
+            "thunder"
+        ],
+        "Damage Immunities": [],
+        "Condition Immunities": []
+    },
+    {
+        "Name": "Deep One Priest",
+        "Damage Vulnerabilities": [
+            "fire"
+        ],
+        "Damage Resistances": [
+            "cold"
+        ],
+        "Damage Immunities": [],
+        "Condition Immunities": []
+    },
+    {
+        "Name": "Demon Lord Camazotz",
+        "Damage Vulnerabilities": [
+            "cold"
+        ],
+        "Damage Resistances": [
+            "acid",
+            "lightning",
+            "bludgeoning",
+            "piercing",
+            "slashing"
+        ],
+        "Damage Immunities": [
+            "fire",
+            "poison",
+            "thunder"
+        ],
+        "Condition Immunities": [
+            "charmed",
+            "deafened",
+            "frightened",
+            "paralyzed",
+            "petrified",
+            "poisoned",
+            "stunned"
+        ]
+    },
+    {
+        "Name": "Demon Lord Mechuiti",
+        "Damage Vulnerabilities": [
+            "cold"
+        ],
+        "Damage Resistances": [],
+        "Damage Immunities": [
+            "acid",
+            "fire",
+            "lightning",
+            "poison",
+            "bludgeoning",
+            "piercing",
+            "slashing"
+        ],
+        "Condition Immunities": [
+            "charmed",
+            "frightened",
+            "poisoned",
+            "stunned"
+        ]
+    },
+    {
+        "Name": "Detached Shadow",
+        "Damage Vulnerabilities": [
+            "radiant"
+        ],
+        "Damage Resistances": [
+            "acid",
+            "cold",
+            "fire",
+            "lightning",
+            "thunder",
+            "bludgeoning",
+            "piercing",
+            "slashing"
+        ],
+        "Damage Immunities": [
+            "necrotic",
+            "poison"
+        ],
+        "Condition Immunities": [
+            "exhaustion",
+            "frightened",
+            "grappled",
+            "paralyzed",
+            "petrified",
+            "poisoned",
+            "prone",
+            "restrained"
+        ]
+    },
+    {
+        "Name": "Dinosaur Skeleton",
+        "Damage Vulnerabilities": [
+            "bludgeoning"
+        ],
+        "Damage Resistances": [],
+        "Damage Immunities": [
+            "poison"
+        ],
+        "Condition Immunities": [
+            "exhaustion",
+            "poisoned"
+        ]
+    },
+    {
+        "Name": "Dire Corby",
+        "Damage Vulnerabilities": [
+            "thunder"
+        ],
+        "Damage Resistances": [],
+        "Damage Immunities": [],
+        "Condition Immunities": [
+            "frightened"
+        ]
+    },
+    {
+        "Name": "Dust Mephit",
+        "Damage Vulnerabilities": [
+            "fire"
+        ],
+        "Damage Resistances": [],
+        "Damage Immunities": [
+            "poison"
+        ],
+        "Condition Immunities": [
+            "poisoned"
+        ]
+    },
+    {
+        "Name": "Dwarf Skeleton",
+        "Damage Vulnerabilities": [
+            "bludgeoning"
+        ],
+        "Damage Resistances": [],
+        "Damage Immunities": [
+            "poison"
+        ],
+        "Condition Immunities": [
+            "exhaustion",
+            "poisoned"
+        ]
+    },
+    {
+        "Name": "Earth Elemental",
+        "Damage Vulnerabilities": [
+            "thunder"
+        ],
+        "Damage Resistances": [
+            "bludgeoning",
+            "piercing",
+            "slashing"
+        ],
+        "Damage Immunities": [
+            "poison"
+        ],
+        "Condition Immunities": [
+            "exhaustion",
+            "paralyzed",
+            "petrified",
+            "poisoned",
+            "unconscious"
+        ]
+    },
+    {
+        "Name": "Earth Totem Elemental",
+        "Damage Vulnerabilities": [
+            "thunder"
+        ],
+        "Damage Resistances": [
+            "bludgeoning",
+            "piercing",
+            "slashing"
+        ],
+        "Damage Immunities": [
+            "poison"
+        ],
+        "Condition Immunities": [
+            "exhaustion",
+            "paralyzed",
+            "petrified",
+            "poisoned",
+            "unconscious"
+        ]
+    },
+    {
+        "Name": "Elder Shadow Drak",
+        "Damage Vulnerabilities": [
+            "radiant"
+        ],
+        "Damage Resistances": [],
+        "Damage Immunities": [
+            "cold"
+        ],
+        "Condition Immunities": []
+    },
+    {
+        "Name": "Empty Cloak",
+        "Damage Vulnerabilities": [
+            "fire"
+        ],
+        "Damage Resistances": [
+            "bludgeoning"
+        ],
+        "Damage Immunities": [
+            "poison",
+            "psychic"
+        ],
+        "Condition Immunities": [
+            "charmed",
+            "exhaustion",
+            "frightened",
+            "paralyzed",
+            "petrified",
+            "poisoned"
+        ]
+    },
+    {
+        "Name": "Fire Snake",
+        "Damage Vulnerabilities": [
+            "cold"
+        ],
+        "Damage Resistances": [
+            "bludgeoning",
+            "piercing",
+            "slashing"
+        ],
+        "Damage Immunities": [
+            "fire"
+        ],
+        "Condition Immunities": []
+    },
+    {
+        "Name": "Flaming Skeleton",
+        "Damage Vulnerabilities": [
+            "bludgeoning"
+        ],
+        "Damage Resistances": [],
+        "Damage Immunities": [
+            "fire",
+            "poison"
+        ],
+        "Condition Immunities": [
+            "exhaustion",
+            "poisoned"
+        ]
+    },
+    {
+        "Name": "Flumph",
+        "Damage Vulnerabilities": [
+            "psychic"
+        ],
+        "Damage Resistances": [],
+        "Damage Immunities": [],
+        "Condition Immunities": []
+    },
+    {
+        "Name": "Flutterflesh",
+        "Damage Vulnerabilities": [
+            "radiant"
+        ],
+        "Damage Resistances": [
+            "cold",
+            "lightning",
+            "bludgeoning",
+            "piercing",
+            "slashing"
+        ],
+        "Damage Immunities": [
+            "necrotic",
+            "poison"
+        ],
+        "Condition Immunities": [
+            "charmed",
+            "exhaustion",
+            "paralyzed",
+            "poisoned",
+            "stunned",
+            "unconscious"
+        ]
+    },
+    {
+        "Name": "Flying Horror",
+        "Damage Vulnerabilities": [
+            "radiant"
+        ],
+        "Damage Resistances": [],
+        "Damage Immunities": [],
+        "Condition Immunities": [
+            "frightened"
+        ]
+    },
+    {
+        "Name": "Frost Giant Skeleton",
+        "Damage Vulnerabilities": [
+            "bludgeoning"
+        ],
+        "Damage Resistances": [],
+        "Damage Immunities": [
+            "cold",
+            "poison"
+        ],
+        "Condition Immunities": [
+            "exhaustion",
+            "poisoned"
+        ]
+    },
+    {
+        "Name": "Frost Salamander",
+        "Damage Vulnerabilities": [
+            "fire"
+        ],
+        "Damage Resistances": [],
+        "Damage Immunities": [
+            "cold"
+        ],
+        "Condition Immunities": []
+    },
+    {
+        "Name": "Frost Worm",
+        "Damage Vulnerabilities": [
+            "fire"
+        ],
+        "Damage Resistances": [],
+        "Damage Immunities": [
+            "cold"
+        ],
+        "Condition Immunities": []
+    },
+    {
+        "Name": "Frostmourn",
+        "Damage Vulnerabilities": [
+            "fire"
+        ],
+        "Damage Resistances": [],
+        "Damage Immunities": [
+            "cold",
+            "poison"
+        ],
+        "Condition Immunities": [
+            "charmed",
+            "exhaustion",
+            "frightened",
+            "grappled",
+            "paralyzed",
+            "petrified",
+            "poisoned",
+            "prone",
+            "restrained"
+        ]
+    },
+    {
+        "Name": "Frostveil",
+        "Damage Vulnerabilities": [
+            "fire"
+        ],
+        "Damage Resistances": [
+            "bludgeoning",
+            "piercing",
+            "slashing"
+        ],
+        "Damage Immunities": [
+            "cold"
+        ],
+        "Condition Immunities": [
+            "blinded",
+            "charmed",
+            "deafened",
+            "frightened",
+            "prone"
+        ]
+    },
+    {
+        "Name": "Fungal Servant",
+        "Damage Vulnerabilities": [
+            "fire"
+        ],
+        "Damage Resistances": [],
+        "Damage Immunities": [
+            "necrotic",
+            "poison",
+            "bludgeoning",
+            "piercing",
+            "slashing"
+        ],
+        "Condition Immunities": [
+            "charmed",
+            "exhaustion",
+            "frightened",
+            "paralyzed",
+            "poisoned"
+        ]
+    },
+    {
+        "Name": "Gadabout",
+        "Damage Vulnerabilities": [
+            "fire"
+        ],
+        "Damage Resistances": [],
+        "Damage Immunities": [],
+        "Condition Immunities": [
+            "blinded",
+            "charmed",
+            "deafened",
+            "exhaustion",
+            "frightened",
+            "paralyzed",
+            "petrified"
+        ]
+    },
+    {
+        "Name": "Giant Shark Skeleton",
+        "Damage Vulnerabilities": [
+            "bludgeoning"
+        ],
+        "Damage Resistances": [],
+        "Damage Immunities": [
+            "poison"
+        ],
+        "Condition Immunities": [
+            "exhaustion",
+            "poisoned"
+        ]
+    },
+    {
+        "Name": "Giant Skeleton",
+        "Damage Vulnerabilities": [
+            "bludgeoning"
+        ],
+        "Damage Resistances": [],
+        "Damage Immunities": [
+            "poison"
+        ],
+        "Condition Immunities": [
+            "exhaustion",
+            "poisoned"
+        ]
+    },
+    {
+        "Name": "Giant Zombie Constrictor Snake",
+        "Damage Vulnerabilities": [
+            "poison"
+        ],
+        "Damage Resistances": [],
+        "Damage Immunities": [],
+        "Condition Immunities": []
+    },
+    {
+        "Name": "Gingerbrute",
+        "Damage Vulnerabilities": [
+            "bludgeoning"
+        ],
+        "Damage Resistances": [],
+        "Damage Immunities": [],
+        "Condition Immunities": [
+            "exhaustion"
+        ]
+    },
+    {
+        "Name": "Gloomstalker",
+        "Damage Vulnerabilities": [
+            "radiant"
+        ],
+        "Damage Resistances": [],
+        "Damage Immunities": [],
+        "Condition Immunities": []
+    },
+    {
+        "Name": "Goliath Werebear",
+        "Damage Vulnerabilities": [
+            "fire"
+        ],
+        "Damage Resistances": [
+            "cold"
+        ],
+        "Damage Immunities": [
+            "bludgeoning",
+            "piercing",
+            "slashing"
+        ],
+        "Condition Immunities": []
+    },
+    {
+        "Name": "Goon Balloon",
+        "Damage Vulnerabilities": [
+            "piercing"
+        ],
+        "Damage Resistances": [],
+        "Damage Immunities": [],
+        "Condition Immunities": []
+    },
+    {
+        "Name": "Greater Death Butterfly Swarm",
+        "Damage Vulnerabilities": [
+            "cold",
+            "fire"
+        ],
+        "Damage Resistances": [
+            "bludgeoning",
+            "piercing",
+            "slashing"
+        ],
+        "Damage Immunities": [],
+        "Condition Immunities": [
+            "charmed",
+            "frightened",
+            "grappled",
+            "paralyzed",
+            "petrified",
+            "poisoned",
+            "prone",
+            "restrained",
+            "stunned"
+        ]
+    },
+    {
+        "Name": "Greater Shadow Horror",
+        "Damage Vulnerabilities": [
+            "radiant"
+        ],
+        "Damage Resistances": [],
+        "Damage Immunities": [],
+        "Condition Immunities": [
+            "frightened"
+        ]
+    },
+    {
+        "Name": "Hellwasp",
+        "Damage Vulnerabilities": [
+            "cold"
+        ],
+        "Damage Resistances": [],
+        "Damage Immunities": [
+            "fire"
+        ],
+        "Condition Immunities": []
+    },
+    {
+        "Name": "Hound of the Night",
+        "Damage Vulnerabilities": [
+            "fire"
+        ],
+        "Damage Resistances": [],
+        "Damage Immunities": [
+            "cold"
+        ],
+        "Condition Immunities": []
+    },
+    {
+        "Name": "Hydroloth",
+        "Damage Vulnerabilities": [
+            "fire"
+        ],
+        "Damage Resistances": [
+            "cold",
+            "lightning",
+            "bludgeoning",
+            "piercing",
+            "slashing"
+        ],
+        "Damage Immunities": [
+            "acid",
+            "poison"
+        ],
+        "Condition Immunities": [
+            "poisoned"
+        ]
+    },
+    {
+        "Name": "Ice Maiden",
+        "Damage Vulnerabilities": [
+            "fire"
+        ],
+        "Damage Resistances": [
+            "bludgeoning",
+            "piercing",
+            "slashing"
+        ],
+        "Damage Immunities": [
+            "cold"
+        ],
+        "Condition Immunities": []
+    },
+    {
+        "Name": "Ice Mephit",
+        "Damage Vulnerabilities": [
+            "bludgeoning",
+            "fire"
+        ],
+        "Damage Resistances": [],
+        "Damage Immunities": [
+            "cold",
+            "poison"
+        ],
+        "Condition Immunities": [
+            "poisoned"
+        ]
+    },
+    {
+        "Name": "Jabberwock",
+        "Damage Vulnerabilities": [
+            "slashing"
+        ],
+        "Damage Resistances": [],
+        "Damage Immunities": [
+            "poison"
+        ],
+        "Condition Immunities": [
+            "charmed",
+            "frightened",
+            "poisoned"
+        ]
+    },
+    {
+        "Name": "Lindwurm",
+        "Damage Vulnerabilities": [
+            "fire"
+        ],
+        "Damage Resistances": [],
+        "Damage Immunities": [
+            "cold"
+        ],
+        "Condition Immunities": [
+            "paralyzed",
+            "unconscious"
+        ]
+    },
+    {
+        "Name": "Living Iron Statue",
+        "Damage Vulnerabilities": [
+            "acid"
+        ],
+        "Damage Resistances": [],
+        "Damage Immunities": [
+            "lightning",
+            "poison"
+        ],
+        "Condition Immunities": [
+            "charmed",
+            "exhaustion",
+            "frightened",
+            "paralyzed",
+            "petrified",
+            "poisoned"
+        ]
+    },
+    {
+        "Name": "Living Wick",
+        "Damage Vulnerabilities": [
+            "fire"
+        ],
+        "Damage Resistances": [],
+        "Damage Immunities": [
+            "poison",
+            "psychic"
+        ],
+        "Condition Immunities": [
+            "blinded",
+            "charmed",
+            "deafened",
+            "exhaustion",
+            "frightened",
+            "paralyzed",
+            "petrified",
+            "poisoned"
+        ]
+    },
+    {
+        "Name": "Lycanthropickle",
+        "Damage Vulnerabilities": [
+            "fire"
+        ],
+        "Damage Resistances": [],
+        "Damage Immunities": [],
+        "Condition Immunities": [
+            "blinded",
+            "deafened"
+        ]
+    },
+    {
+        "Name": "Magma Mephit",
+        "Damage Vulnerabilities": [
+            "cold"
+        ],
+        "Damage Resistances": [],
+        "Damage Immunities": [
+            "fire",
+            "poison"
+        ],
+        "Condition Immunities": [
+            "poisoned"
+        ]
+    },
+    {
+        "Name": "Mask Wight",
+        "Damage Vulnerabilities": [
+            "radiant"
+        ],
+        "Damage Resistances": [
+            "acid",
+            "cold",
+            "fire",
+            "lightning",
+            "bludgeoning",
+            "piercing",
+            "slashing"
+        ],
+        "Damage Immunities": [
+            "necrotic",
+            "poison"
+        ],
+        "Condition Immunities": [
+            "charmed",
+            "frightened",
+            "paralyzed",
+            "petrified",
+            "poisoned",
+            "stunned",
+            "unconscious"
+        ]
+    },
+    {
+        "Name": "Minotaur Living Crystal Statue",
+        "Damage Vulnerabilities": [
+            "force"
+        ],
+        "Damage Resistances": [],
+        "Damage Immunities": [
+            "lightning",
+            "poison"
+        ],
+        "Condition Immunities": [
+            "charmed",
+            "exhaustion",
+            "frightened",
+            "paralyzed",
+            "petrified",
+            "poisoned"
+        ]
+    },
+    {
+        "Name": "Minotaur Skeleton",
+        "Damage Vulnerabilities": [
+            "bludgeoning"
+        ],
+        "Damage Resistances": [],
+        "Damage Immunities": [
+            "poison"
+        ],
+        "Condition Immunities": [
+            "exhaustion",
+            "poisoned"
+        ]
+    },
+    {
+        "Name": "Mjork",
+        "Damage Vulnerabilities": [
+            "thunder"
+        ],
+        "Damage Resistances": [
+            "bludgeoning",
+            "piercing",
+            "slashing"
+        ],
+        "Damage Immunities": [
+            "fire",
+            "poison"
+        ],
+        "Condition Immunities": [
+            "exhaustion",
+            "paralyzed",
+            "petrified",
+            "poisoned",
+            "unconscious"
+        ]
+    },
+    {
+        "Name": "Mjork Asher",
+        "Damage Vulnerabilities": [
+            "thunder"
+        ],
+        "Damage Resistances": [
+            "bludgeoning",
+            "piercing",
+            "slashing"
+        ],
+        "Damage Immunities": [
+            "fire",
+            "poison"
+        ],
+        "Condition Immunities": [
+            "exhaustion",
+            "paralyzed",
+            "petrified",
+            "poisoned",
+            "unconscious"
+        ]
+    },
+    {
+        "Name": "Mjork Burner",
+        "Damage Vulnerabilities": [
+            "thunder"
+        ],
+        "Damage Resistances": [
+            "bludgeoning",
+            "piercing",
+            "slashing"
+        ],
+        "Damage Immunities": [
+            "fire",
+            "poison"
+        ],
+        "Condition Immunities": [
+            "exhaustion",
+            "paralyzed",
+            "petrified",
+            "poisoned",
+            "unconscious"
+        ]
+    },
+    {
+        "Name": "Mjork Charger",
+        "Damage Vulnerabilities": [
+            "thunder"
+        ],
+        "Damage Resistances": [
+            "bludgeoning",
+            "piercing",
+            "slashing"
+        ],
+        "Damage Immunities": [
+            "fire",
+            "poison"
+        ],
+        "Condition Immunities": [
+            "exhaustion",
+            "paralyzed",
+            "petrified",
+            "poisoned",
+            "unconscious"
+        ]
+    },
+    {
+        "Name": "Mjork Sootling",
+        "Damage Vulnerabilities": [
+            "thunder"
+        ],
+        "Damage Resistances": [],
+        "Damage Immunities": [
+            "fire",
+            "poison"
+        ],
+        "Condition Immunities": [
+            "exhaustion",
+            "paralyzed",
+            "petrified",
+            "poisoned",
+            "unconscious"
+        ]
+    },
+    {
+        "Name": "Mjork Sootling Swarm",
+        "Damage Vulnerabilities": [
+            "thunder"
+        ],
+        "Damage Resistances": [
+            "bludgeoning",
+            "piercing",
+            "slashing"
+        ],
+        "Damage Immunities": [
+            "fire",
+            "poison"
+        ],
+        "Condition Immunities": [
+            "charmed",
+            "exhaustion",
+            "frightened",
+            "grappled",
+            "paralyzed",
+            "petrified",
+            "poisoned",
+            "prone",
+            "restrained",
+            "unconscious"
+        ]
+    },
+    {
+        "Name": "Mold Spider",
+        "Damage Vulnerabilities": [
+            "fire"
+        ],
+        "Damage Resistances": [],
+        "Damage Immunities": [],
+        "Condition Immunities": [
+            "blinded",
+            "deafened"
+        ]
+    },
+    {
+        "Name": "Molten Magma Roper",
+        "Damage Vulnerabilities": [
+            "cold"
+        ],
+        "Damage Resistances": [],
+        "Damage Immunities": [
+            "fire"
+        ],
+        "Condition Immunities": []
+    },
+    {
+        "Name": "Mordakhesh",
+        "Damage Vulnerabilities": [
+            "piercing"
+        ],
+        "Damage Resistances": [
+            "bludgeoning",
+            "piercing",
+            "slashing"
+        ],
+        "Damage Immunities": [],
+        "Condition Immunities": []
+    },
+    {
+        "Name": "Mummy",
+        "Damage Vulnerabilities": [
+            "fire"
+        ],
+        "Damage Resistances": [
+            "bludgeoning",
+            "piercing",
+            "slashing"
+        ],
+        "Damage Immunities": [
+            "necrotic",
+            "poison"
+        ],
+        "Condition Immunities": [
+            "charmed",
+            "exhaustion",
+            "frightened",
+            "paralyzed",
+            "poisoned"
+        ]
+    },
+    {
+        "Name": "Mummy Lord",
+        "Damage Vulnerabilities": [
+            "fire"
+        ],
+        "Damage Resistances": [],
+        "Damage Immunities": [
+            "necrotic",
+            "poison",
+            "bludgeoning",
+            "piercing",
+            "slashing"
+        ],
+        "Condition Immunities": [
+            "charmed",
+            "exhaustion",
+            "frightened",
+            "paralyzed",
+            "poisoned"
+        ]
+    },
+    {
+        "Name": "Nightgarm",
+        "Damage Vulnerabilities": [
+            "radiant",
+            "bludgeoning",
+            "piercing"
+        ],
+        "Damage Resistances": [
+            "lightning",
+            "thunder"
+        ],
+        "Damage Immunities": [],
+        "Condition Immunities": []
+    },
+    {
+        "Name": "Oblivion Brute",
+        "Damage Vulnerabilities": [
+            "radiant"
+        ],
+        "Damage Resistances": [
+            "cold",
+            "bludgeoning",
+            "piercing",
+            "slashing"
+        ],
+        "Damage Immunities": [
+            "necrotic",
+            "poison"
+        ],
+        "Condition Immunities": [
+            "exhaustion",
+            "frightened",
+            "grappled",
+            "paralyzed",
+            "petrified",
+            "poisoned",
+            "prone",
+            "restrained"
+        ]
+    },
+    {
+        "Name": "Oblivion Juggernaut",
+        "Damage Vulnerabilities": [
+            "radiant"
+        ],
+        "Damage Resistances": [
+            "cold",
+            "bludgeoning",
+            "piercing",
+            "slashing"
+        ],
+        "Damage Immunities": [
+            "necrotic",
+            "poison"
+        ],
+        "Condition Immunities": [
+            "exhaustion",
+            "frightened",
+            "grappled",
+            "paralyzed",
+            "petrified",
+            "poisoned",
+            "prone",
+            "restrained"
+        ]
+    },
+    {
+        "Name": "Oblivion Leaper",
+        "Damage Vulnerabilities": [
+            "radiant"
+        ],
+        "Damage Resistances": [
+            "cold",
+            "bludgeoning",
+            "piercing",
+            "slashing"
+        ],
+        "Damage Immunities": [
+            "necrotic",
+            "poison"
+        ],
+        "Condition Immunities": [
+            "exhaustion",
+            "frightened",
+            "grappled",
+            "paralyzed",
+            "petrified",
+            "poisoned",
+            "prone",
+            "restrained"
+        ]
+    },
+    {
+        "Name": "Oblivion Whistler",
+        "Damage Vulnerabilities": [
+            "radiant"
+        ],
+        "Damage Resistances": [
+            "cold",
+            "bludgeoning",
+            "piercing",
+            "slashing"
+        ],
+        "Damage Immunities": [
+            "necrotic",
+            "poison"
+        ],
+        "Condition Immunities": [
+            "exhaustion",
+            "frightened",
+            "grappled",
+            "paralyzed",
+            "petrified",
+            "poisoned",
+            "prone",
+            "restrained"
+        ]
+    },
+    {
+        "Name": "Ogre Skeleton",
+        "Damage Vulnerabilities": [
+            "bludgeoning"
+        ],
+        "Damage Resistances": [],
+        "Damage Immunities": [
+            "poison"
+        ],
+        "Condition Immunities": [
+            "exhaustion",
+            "poisoned"
+        ]
+    },
+    {
+        "Name": "Oozasis",
+        "Damage Vulnerabilities": [
+            "cold"
+        ],
+        "Damage Resistances": [
+            "fire",
+            "bludgeoning",
+            "piercing",
+            "slashing"
+        ],
+        "Damage Immunities": [
+            "acid"
+        ],
+        "Condition Immunities": [
+            "blinded",
+            "charmed",
+            "deafened",
+            "exhaustion",
+            "frightened",
+            "prone"
+        ]
+    },
+    {
+        "Name": "Ordeal Tree",
+        "Damage Vulnerabilities": [
+            "fire"
+        ],
+        "Damage Resistances": [
+            "bludgeoning",
+            "piercing"
+        ],
+        "Damage Immunities": [],
+        "Condition Immunities": []
+    },
+    {
+        "Name": "Ostinato",
+        "Damage Vulnerabilities": [
+            "thunder"
+        ],
+        "Damage Resistances": [
+            "acid",
+            "cold",
+            "fire",
+            "lightning",
+            "bludgeoning",
+            "piercing",
+            "slashing"
+        ],
+        "Damage Immunities": [
+            "poison"
+        ],
+        "Condition Immunities": [
+            "charmed",
+            "exhaustion",
+            "grappled",
+            "paralyzed",
+            "petrified",
+            "poisoned",
+            "prone",
+            "restrained"
+        ]
+    },
+    {
+        "Name": "Owl Harpy",
+        "Damage Vulnerabilities": [
+            "thunder"
+        ],
+        "Damage Resistances": [],
+        "Damage Immunities": [],
+        "Condition Immunities": []
+    },
+    {
+        "Name": "Paper Bird",
+        "Damage Vulnerabilities": [
+            "fire"
+        ],
+        "Damage Resistances": [],
+        "Damage Immunities": [
+            "poison",
+            "psychic"
+        ],
+        "Condition Immunities": [
+            "charmed",
+            "exhaustion",
+            "frightened",
+            "poisoned"
+        ]
+    },
+    {
+        "Name": "Paper Whirlwind",
+        "Damage Vulnerabilities": [
+            "fire"
+        ],
+        "Damage Resistances": [
+            "bludgeoning",
+            "piercing",
+            "slashing"
+        ],
+        "Damage Immunities": [],
+        "Condition Immunities": [
+            "charmed",
+            "frightened",
+            "grappled",
+            "paralyzed",
+            "petrified",
+            "prone",
+            "restrained",
+            "stunned"
+        ]
+    },
+    {
+        "Name": "Puppeteer Parasite",
+        "Damage Vulnerabilities": [
+            "radiant"
+        ],
+        "Damage Resistances": [
+            "fire",
+            "necrotic",
+            "poison"
+        ],
+        "Damage Immunities": [],
+        "Condition Immunities": [
+            "charmed",
+            "frightened",
+            "poisoned"
+        ]
+    },
+    {
+        "Name": "Quicksilver Siege Orb",
+        "Damage Vulnerabilities": [
+            "cold"
+        ],
+        "Damage Resistances": [
+            "fire",
+            "lightning",
+            "piercing",
+            "slashing"
+        ],
+        "Damage Immunities": [
+            "bludgeoning",
+            "poison",
+            "psychic"
+        ],
+        "Condition Immunities": [
+            "charmed",
+            "exhaustion",
+            "frightened",
+            "paralyzed",
+            "petrified",
+            "poisoned",
+            "prone",
+            "unconscious"
+        ]
+    },
+    {
+        "Name": "Rakshasa",
+        "Damage Vulnerabilities": [
+            "piercing"
+        ],
+        "Damage Resistances": [],
+        "Damage Immunities": [
+            "bludgeoning",
+            "piercing",
+            "slashing"
+        ],
+        "Condition Immunities": []
+    },
+    {
+        "Name": "Ravenala",
+        "Damage Vulnerabilities": [
+            "cold",
+            "fire"
+        ],
+        "Damage Resistances": [
+            "bludgeoning",
+            "piercing"
+        ],
+        "Damage Immunities": [],
+        "Condition Immunities": [
+            "blinded",
+            "deafened"
+        ]
+    },
+    {
+        "Name": "Reflection",
+        "Damage Vulnerabilities": [
+            "bludgeoning"
+        ],
+        "Damage Resistances": [
+            "acid",
+            "cold",
+            "fire",
+            "lightning",
+            "thunder",
+            "piercing",
+            "slashing"
+        ],
+        "Damage Immunities": [
+            "necrotic",
+            "poison"
+        ],
+        "Condition Immunities": [
+            "exhaustion",
+            "frightened",
+            "grappled",
+            "paralyzed",
+            "petrified",
+            "poisoned",
+            "prone",
+            "restrained"
+        ]
+    },
+    {
+        "Name": "Rotter",
+        "Damage Vulnerabilities": [
+            "fire"
+        ],
+        "Damage Resistances": [
+            "bludgeoning",
+            "piercing"
+        ],
+        "Damage Immunities": [
+            "poison"
+        ],
+        "Condition Immunities": [
+            "charmed",
+            "frightened",
+            "poisoned"
+        ]
+    },
+    {
+        "Name": "Rust Drake",
+        "Damage Vulnerabilities": [
+            "acid"
+        ],
+        "Damage Resistances": [],
+        "Damage Immunities": [
+            "poison"
+        ],
+        "Condition Immunities": [
+            "poisoned"
+        ]
+    },
+    {
+        "Name": "Salamander",
+        "Damage Vulnerabilities": [
+            "cold"
+        ],
+        "Damage Resistances": [
+            "bludgeoning",
+            "piercing",
+            "slashing"
+        ],
+        "Damage Immunities": [
+            "fire"
+        ],
+        "Condition Immunities": []
+    },
+    {
+        "Name": "Scarecrow",
+        "Damage Vulnerabilities": [
+            "fire"
+        ],
+        "Damage Resistances": [
+            "bludgeoning",
+            "piercing",
+            "slashing"
+        ],
+        "Damage Immunities": [
+            "poison"
+        ],
+        "Condition Immunities": [
+            "charmed",
+            "exhaustion",
+            "frightened",
+            "paralyzed",
+            "poisoned",
+            "unconscious"
+        ]
+    },
+    {
+        "Name": "Shade",
+        "Damage Vulnerabilities": [
+            "radiant"
+        ],
+        "Damage Resistances": [
+            "acid",
+            "cold",
+            "fire",
+            "lightning",
+            "thunder",
+            "bludgeoning",
+            "piercing",
+            "slashing"
+        ],
+        "Damage Immunities": [
+            "necrotic",
+            "poison"
+        ],
+        "Condition Immunities": [
+            "exhaustion",
+            "frightened",
+            "grappled",
+            "paralyzed",
+            "petrified",
+            "poisoned",
+            "prone",
+            "restrained"
+        ]
+    },
+    {
+        "Name": "Shadow",
+        "Damage Vulnerabilities": [
+            "radiant"
+        ],
+        "Damage Resistances": [
+            "acid",
+            "cold",
+            "fire",
+            "lightning",
+            "thunder",
+            "bludgeoning",
+            "piercing",
+            "slashing"
+        ],
+        "Damage Immunities": [
+            "necrotic",
+            "poison"
+        ],
+        "Condition Immunities": [
+            "exhaustion",
+            "frightened",
+            "grappled",
+            "paralyzed",
+            "petrified",
+            "poisoned",
+            "prone",
+            "restrained"
+        ]
+    },
+    {
+        "Name": "Shadow Assassin",
+        "Damage Vulnerabilities": [
+            "radiant"
+        ],
+        "Damage Resistances": [
+            "acid",
+            "cold",
+            "fire",
+            "lightning",
+            "thunder",
+            "bludgeoning",
+            "piercing",
+            "slashing"
+        ],
+        "Damage Immunities": [
+            "necrotic",
+            "poison"
+        ],
+        "Condition Immunities": [
+            "exhaustion",
+            "frightened",
+            "grappled",
+            "paralyzed",
+            "petrified",
+            "poisoned",
+            "prone",
+            "restrained"
+        ]
+    },
+    {
+        "Name": "Shadow Demon",
+        "Damage Vulnerabilities": [
+            "radiant"
+        ],
+        "Damage Resistances": [
+            "acid",
+            "fire",
+            "necrotic",
+            "thunder",
+            "bludgeoning",
+            "piercing",
+            "slashing"
+        ],
+        "Damage Immunities": [
+            "cold",
+            "lightning",
+            "poison"
+        ],
+        "Condition Immunities": [
+            "exhaustion",
+            "grappled",
+            "paralyzed",
+            "petrified",
+            "poisoned",
+            "prone",
+            "restrained"
+        ]
+    },
+    {
+        "Name": "Shadow Horror",
+        "Damage Vulnerabilities": [
+            "radiant"
+        ],
+        "Damage Resistances": [],
+        "Damage Immunities": [],
+        "Condition Immunities": [
+            "frightened"
+        ]
+    },
+    {
+        "Name": "Sharkjaw Skeleton",
+        "Damage Vulnerabilities": [
+            "bludgeoning"
+        ],
+        "Damage Resistances": [],
+        "Damage Immunities": [
+            "cold",
+            "poison"
+        ],
+        "Condition Immunities": [
+            "exhaustion",
+            "poisoned"
+        ]
+    },
+    {
+        "Name": "Shroud",
+        "Damage Vulnerabilities": [
+            "radiant"
+        ],
+        "Damage Resistances": [
+            "acid",
+            "cold",
+            "fire",
+            "lightning",
+            "thunder",
+            "bludgeoning",
+            "piercing",
+            "slashing"
+        ],
+        "Damage Immunities": [
+            "necrotic",
+            "poison"
+        ],
+        "Condition Immunities": [
+            "exhaustion",
+            "frightened",
+            "grappled",
+            "paralyzed",
+            "petrified",
+            "poisoned",
+            "prone",
+            "restrained"
+        ]
+    },
+    {
+        "Name": "Skeletal Alchemist",
+        "Damage Vulnerabilities": [
+            "bludgeoning"
+        ],
+        "Damage Resistances": [],
+        "Damage Immunities": [
+            "poison"
+        ],
+        "Condition Immunities": [
+            "exhaustion",
+            "poisoned"
+        ]
+    },
+    {
+        "Name": "Skeletal Giant Owl",
+        "Damage Vulnerabilities": [
+            "bludgeoning"
+        ],
+        "Damage Resistances": [],
+        "Damage Immunities": [
+            "poison"
+        ],
+        "Condition Immunities": [
+            "exhaustion",
+            "poisoned"
+        ]
+    },
+    {
+        "Name": "Skeletal Horror",
+        "Damage Vulnerabilities": [
+            "bludgeoning"
+        ],
+        "Damage Resistances": [],
+        "Damage Immunities": [
+            "poison"
+        ],
+        "Condition Immunities": [
+            "exhaustion",
+            "poisoned"
+        ]
+    },
+    {
+        "Name": "Skeletal Juggernaut",
+        "Damage Vulnerabilities": [
+            "bludgeoning"
+        ],
+        "Damage Resistances": [],
+        "Damage Immunities": [
+            "poison"
+        ],
+        "Condition Immunities": [
+            "exhaustion",
+            "poisoned"
+        ]
+    },
+    {
+        "Name": "Skeletal Owlbear",
+        "Damage Vulnerabilities": [
+            "bludgeoning"
+        ],
+        "Damage Resistances": [],
+        "Damage Immunities": [
+            "poison"
+        ],
+        "Condition Immunities": [
+            "exhaustion",
+            "poisoned"
+        ]
+    },
+    {
+        "Name": "Skeletal Polar Bear",
+        "Damage Vulnerabilities": [
+            "bludgeoning"
+        ],
+        "Damage Resistances": [],
+        "Damage Immunities": [
+            "poison"
+        ],
+        "Condition Immunities": [
+            "exhaustion",
+            "poisoned"
+        ]
+    },
+    {
+        "Name": "Skeletal Swarm",
+        "Damage Vulnerabilities": [
+            "bludgeoning"
+        ],
+        "Damage Resistances": [
+            "slashing",
+            "piercing"
+        ],
+        "Damage Immunities": [
+            "poison"
+        ],
+        "Condition Immunities": [
+            "charmed",
+            "exhaustion",
+            "frightened",
+            "paralyzed",
+            "petrified",
+            "poisoned",
+            "prone",
+            "restrained",
+            "stunned"
+        ]
+    },
+    {
+        "Name": "Skeletal Two-Headed Owlbear",
+        "Damage Vulnerabilities": [
+            "bludgeoning"
+        ],
+        "Damage Resistances": [],
+        "Damage Immunities": [
+            "poison"
+        ],
+        "Condition Immunities": [
+            "exhaustion",
+            "poisoned"
+        ]
+    },
+    {
+        "Name": "Skeleton",
+        "Damage Vulnerabilities": [
+            "bludgeoning"
+        ],
+        "Damage Resistances": [],
+        "Damage Immunities": [
+            "poison"
+        ],
+        "Condition Immunities": [
+            "exhaustion",
+            "poisoned"
+        ]
+    },
+    {
+        "Name": "Skeleton Cannoneer",
+        "Damage Vulnerabilities": [
+            "bludgeoning"
+        ],
+        "Damage Resistances": [],
+        "Damage Immunities": [
+            "poison"
+        ],
+        "Condition Immunities": [
+            "exhaustion",
+            "poisoned"
+        ]
+    },
+    {
+        "Name": "Skeleton Commander",
+        "Damage Vulnerabilities": [
+            "bludgeoning"
+        ],
+        "Damage Resistances": [],
+        "Damage Immunities": [
+            "poison"
+        ],
+        "Condition Immunities": [
+            "exhaustion",
+            "poisoned"
+        ]
+    },
+    {
+        "Name": "Skeleton Key",
+        "Damage Vulnerabilities": [
+            "bludgeoning"
+        ],
+        "Damage Resistances": [],
+        "Damage Immunities": [
+            "poison"
+        ],
+        "Condition Immunities": [
+            "exhaustion",
+            "poisoned"
+        ]
+    },
+    {
+        "Name": "Skeleton Lord",
+        "Damage Vulnerabilities": [
+            "bludgeoning"
+        ],
+        "Damage Resistances": [
+            "cold",
+            "necrotic"
+        ],
+        "Damage Immunities": [
+            "poison",
+            "bludgeoning",
+            "piercing",
+            "slashing"
+        ],
+        "Condition Immunities": [
+            "charmed",
+            "exhaustion",
+            "frightened",
+            "poisoned"
+        ]
+    },
+    {
+        "Name": "Skeleton Rifler",
+        "Damage Vulnerabilities": [
+            "bludgeoning"
+        ],
+        "Damage Resistances": [],
+        "Damage Immunities": [
+            "poison"
+        ],
+        "Condition Immunities": [
+            "exhaustion",
+            "poisoned"
+        ]
+    },
+    {
+        "Name": "Skeleton Warrior",
+        "Damage Vulnerabilities": [
+            "bludgeoning"
+        ],
+        "Damage Resistances": [
+            "cold",
+            "necrotic"
+        ],
+        "Damage Immunities": [
+            "poison",
+            "bludgeoning",
+            "piercing",
+            "slashing"
+        ],
+        "Condition Immunities": [
+            "charmed",
+            "exhaustion",
+            "frightened",
+            "poisoned"
+        ]
+    },
+    {
+        "Name": "Skittering Horror",
+        "Damage Vulnerabilities": [
+            "radiant"
+        ],
+        "Damage Resistances": [],
+        "Damage Immunities": [],
+        "Condition Immunities": [
+            "frightened"
+        ]
+    },
+    {
+        "Name": "Slithering Tracker",
+        "Damage Vulnerabilities": [
+            "cold",
+            "fire"
+        ],
+        "Damage Resistances": [
+            "bludgeoning",
+            "piercing",
+            "slashing"
+        ],
+        "Damage Immunities": [],
+        "Condition Immunities": [
+            "blinded",
+            "deafened",
+            "exhaustion",
+            "grappled",
+            "paralyzed",
+            "petrified",
+            "prone",
+            "restrained",
+            "unconscious"
+        ]
+    },
+    {
+        "Name": "Snow Golem",
+        "Damage Vulnerabilities": [
+            "fire"
+        ],
+        "Damage Resistances": [],
+        "Damage Immunities": [
+            "cold",
+            "poison",
+            "bludgeoning",
+            "piercing",
+            "slashing"
+        ],
+        "Condition Immunities": [
+            "charmed",
+            "exhaustion",
+            "frightened",
+            "paralyzed",
+            "petrified",
+            "poisoned"
+        ]
+    },
+    {
+        "Name": "Spythronar Web",
+        "Damage Vulnerabilities": [
+            "fire"
+        ],
+        "Damage Resistances": [
+            "bludgeoning",
+            "piercing"
+        ],
+        "Damage Immunities": [
+            "lightning"
+        ],
+        "Condition Immunities": [
+            "blinded",
+            "charmed",
+            "deafened",
+            "exhaustion",
+            "frightened",
+            "paralyzed",
+            "petrified",
+            "poisoned",
+            "prone",
+            "unconscious"
+        ]
+    },
+    {
+        "Name": "Stone Cursed",
+        "Damage Vulnerabilities": [
+            "bludgeoning"
+        ],
+        "Damage Resistances": [],
+        "Damage Immunities": [
+            "poison"
+        ],
+        "Condition Immunities": [
+            "charmed",
+            "exhaustion",
+            "frightened",
+            "petrified",
+            "poisoned"
+        ]
+    },
+    {
+        "Name": "Storm Giant Skeleton",
+        "Damage Vulnerabilities": [
+            "bludgeoning"
+        ],
+        "Damage Resistances": [
+            "cold"
+        ],
+        "Damage Immunities": [
+            "lightning",
+            "poison",
+            "thunder"
+        ],
+        "Condition Immunities": [
+            "exhaustion",
+            "poisoned"
+        ]
+    },
+    {
+        "Name": "Swarm of Animated Books",
+        "Damage Vulnerabilities": [
+            "fire"
+        ],
+        "Damage Resistances": [],
+        "Damage Immunities": [
+            "poison",
+            "psychic"
+        ],
+        "Condition Immunities": [
+            "charmed",
+            "exhaustion",
+            "frightened",
+            "grappled",
+            "paralyzed",
+            "petrified",
+            "poisoned",
+            "prone",
+            "restrained",
+            "stunned"
+        ]
+    },
+    {
+        "Name": "Swarm of Mechanical Spiders",
+        "Damage Vulnerabilities": [
+            "lightning"
+        ],
+        "Damage Resistances": [
+            "bludgeoning",
+            "piercing",
+            "slashing"
+        ],
+        "Damage Immunities": [],
+        "Condition Immunities": [
+            "charmed",
+            "exhaustion",
+            "frightened",
+            "grappled",
+            "paralyzed",
+            "petrified",
+            "poisoned",
+            "prone",
+            "restrained",
+            "stunned"
+        ]
+    },
+    {
+        "Name": "Swarm of Rot Grubs",
+        "Damage Vulnerabilities": [
+            "fire"
+        ],
+        "Damage Resistances": [
+            "piercing",
+            "slashing"
+        ],
+        "Damage Immunities": [],
+        "Condition Immunities": [
+            "charmed",
+            "frightened",
+            "grappled",
+            "paralyzed",
+            "petrified",
+            "prone",
+            "restrained"
+        ]
+    },
+    {
+        "Name": "Swarm of Sluaghs",
+        "Damage Vulnerabilities": [
+            "fire"
+        ],
+        "Damage Resistances": [
+            "bludgeoning",
+            "piercing",
+            "slashing"
+        ],
+        "Damage Immunities": [
+            "cold"
+        ],
+        "Condition Immunities": [
+            "charmed",
+            "frightened",
+            "grappled",
+            "paralyzed",
+            "petrified",
+            "prone",
+            "restrained",
+            "stunned"
+        ]
+    },
+    {
+        "Name": "Sweettooth Horror",
+        "Damage Vulnerabilities": [
+            "bludgeoning"
+        ],
+        "Damage Resistances": [],
+        "Damage Immunities": [
+            "poison"
+        ],
+        "Condition Immunities": [
+            "charmed",
+            "exhaustion",
+            "poisoned"
+        ]
+    },
+    {
+        "Name": "Tendril Puppet",
+        "Damage Vulnerabilities": [
+            "fire"
+        ],
+        "Damage Resistances": [],
+        "Damage Immunities": [],
+        "Condition Immunities": [
+            "blinded",
+            "deafened"
+        ]
+    },
+    {
+        "Name": "Thuellai",
+        "Damage Vulnerabilities": [
+            "fire"
+        ],
+        "Damage Resistances": [
+            "lightning",
+            "thunder",
+            "bludgeoning",
+            "piercing",
+            "slashing"
+        ],
+        "Damage Immunities": [
+            "poison"
+        ],
+        "Condition Immunities": [
+            "exhaustion",
+            "grappled",
+            "paralyzed",
+            "petrified",
+            "poisoned",
+            "prone",
+            "restrained",
+            "unconscious"
+        ]
+    },
+    {
+        "Name": "Thunder Beast Skeleton",
+        "Damage Vulnerabilities": [
+            "bludgeoning"
+        ],
+        "Damage Resistances": [],
+        "Damage Immunities": [
+            "poison"
+        ],
+        "Condition Immunities": [
+            "exhaustion",
+            "poisoned"
+        ]
+    },
+    {
+        "Name": "Treant",
+        "Damage Vulnerabilities": [
+            "fire"
+        ],
+        "Damage Resistances": [
+            "bludgeoning",
+            "piercing"
+        ],
+        "Damage Immunities": [],
+        "Condition Immunities": []
+    },
+    {
+        "Name": "Treant Sapling",
+        "Damage Vulnerabilities": [
+            "fire"
+        ],
+        "Damage Resistances": [
+            "bludgeoning",
+            "piercing"
+        ],
+        "Damage Immunities": [],
+        "Condition Immunities": []
+    },
+    {
+        "Name": "Treant Totem Elemental",
+        "Damage Vulnerabilities": [
+            "fire"
+        ],
+        "Damage Resistances": [
+            "bludgeoning",
+            "piercing"
+        ],
+        "Damage Immunities": [],
+        "Condition Immunities": []
+    },
+    {
+        "Name": "Treefolk",
+        "Damage Vulnerabilities": [
+            "fire"
+        ],
+        "Damage Resistances": [
+            "bludgeoning",
+            "piercing"
+        ],
+        "Damage Immunities": [],
+        "Condition Immunities": []
+    },
+    {
+        "Name": "Twig Blight",
+        "Damage Vulnerabilities": [
+            "fire"
+        ],
+        "Damage Resistances": [],
+        "Damage Immunities": [],
+        "Condition Immunities": [
+            "blinded",
+            "deafened"
+        ]
+    },
+    {
+        "Name": "Udaak",
+        "Damage Vulnerabilities": [
+            "thunder"
+        ],
+        "Damage Resistances": [],
+        "Damage Immunities": [
+            "poison",
+            "bludgeoning",
+            "piercing",
+            "slashing"
+        ],
+        "Condition Immunities": [
+            "frightened",
+            "grappled",
+            "poisoned",
+            "restrained"
+        ]
+    },
+    {
+        "Name": "Undead Bulette",
+        "Damage Vulnerabilities": [
+            "radiant"
+        ],
+        "Damage Resistances": [
+            "necrotic"
+        ],
+        "Damage Immunities": [
+            "poison"
+        ],
+        "Condition Immunities": [
+            "poisoned"
+        ]
+    },
+    {
+        "Name": "Undead Tree",
+        "Damage Vulnerabilities": [
+            "fire"
+        ],
+        "Damage Resistances": [
+            "necrotic"
+        ],
+        "Damage Immunities": [],
+        "Condition Immunities": []
+    },
+    {
+        "Name": "Undying Councilor",
+        "Damage Vulnerabilities": [
+            "necrotic"
+        ],
+        "Damage Resistances": [],
+        "Damage Immunities": [
+            "poison",
+            "radiant"
+        ],
+        "Condition Immunities": [
+            "charmed",
+            "exhaustion",
+            "frightened",
+            "paralyzed",
+            "poisoned"
+        ]
+    },
+    {
+        "Name": "Undying Soldier",
+        "Damage Vulnerabilities": [
+            "necrotic"
+        ],
+        "Damage Resistances": [
+            "radiant",
+            "bludgeoning",
+            "piercing",
+            "slashing"
+        ],
+        "Damage Immunities": [
+            "poison"
+        ],
+        "Condition Immunities": [
+            "exhaustion",
+            "poisoned"
+        ]
+    },
+    {
+        "Name": "Vampirate",
+        "Damage Vulnerabilities": [
+            "radiant"
+        ],
+        "Damage Resistances": [],
+        "Damage Immunities": [
+            "cold",
+            "necrotic",
+            "poison"
+        ],
+        "Condition Immunities": [
+            "charmed",
+            "exhaustion",
+            "poisoned"
+        ]
+    },
+    {
+        "Name": "Vampirate Captain",
+        "Damage Vulnerabilities": [
+            "radiant"
+        ],
+        "Damage Resistances": [],
+        "Damage Immunities": [
+            "cold",
+            "necrotic",
+            "poison"
+        ],
+        "Condition Immunities": [
+            "charmed",
+            "exhaustion",
+            "poisoned"
+        ]
+    },
+    {
+        "Name": "Vampirate Mage",
+        "Damage Vulnerabilities": [
+            "radiant"
+        ],
+        "Damage Resistances": [],
+        "Damage Immunities": [
+            "cold",
+            "necrotic",
+            "poison"
+        ],
+        "Condition Immunities": [
+            "charmed",
+            "exhaustion",
+            "poisoned"
+        ]
+    },
+    {
+        "Name": "Vampiric Jade Statue",
+        "Damage Vulnerabilities": [
+            "force"
+        ],
+        "Damage Resistances": [],
+        "Damage Immunities": [
+            "lightning",
+            "poison"
+        ],
+        "Condition Immunities": [
+            "charmed",
+            "exhaustion",
+            "frightened",
+            "paralyzed",
+            "petrified",
+            "poisoned"
+        ]
+    },
+    {
+        "Name": "Venomous Mummy",
+        "Damage Vulnerabilities": [
+            "fire"
+        ],
+        "Damage Resistances": [
+            "bludgeoning",
+            "piercing",
+            "slashing"
+        ],
+        "Damage Immunities": [
+            "necrotic",
+            "poison"
+        ],
+        "Condition Immunities": [
+            "charmed",
+            "exhaustion",
+            "frightened",
+            "paralyzed",
+            "poisoned"
+        ]
+    },
+    {
+        "Name": "Vine Lord",
+        "Damage Vulnerabilities": [
+            "fire"
+        ],
+        "Damage Resistances": [],
+        "Damage Immunities": [],
+        "Condition Immunities": [
+            "blinded",
+            "deafened"
+        ]
+    },
+    {
+        "Name": "Voidling",
+        "Damage Vulnerabilities": [
+            "radiant"
+        ],
+        "Damage Resistances": [],
+        "Damage Immunities": [
+            "necrotic"
+        ],
+        "Condition Immunities": [
+            "exhaustion",
+            "petrified",
+            "prone"
+        ]
+    },
+    {
+        "Name": "Walking Delerium Geode",
+        "Damage Vulnerabilities": [
+            "radiant",
+            "thunder"
+        ],
+        "Damage Resistances": [
+            "bludgeoning",
+            "piercing",
+            "slashing"
+        ],
+        "Damage Immunities": [
+            "necrotic",
+            "poison"
+        ],
+        "Condition Immunities": [
+            "exhaustion",
+            "paralyzed",
+            "petrified",
+            "poisoned",
+            "unconscious"
+        ]
+    },
+    {
+        "Name": "Warhorse Skeleton",
+        "Damage Vulnerabilities": [
+            "bludgeoning"
+        ],
+        "Damage Resistances": [],
+        "Damage Immunities": [
+            "poison"
+        ],
+        "Condition Immunities": [
+            "exhaustion",
+            "poisoned"
+        ]
+    },
+    {
+        "Name": "Weeping Treant",
+        "Damage Vulnerabilities": [
+            "fire"
+        ],
+        "Damage Resistances": [
+            "bludgeoning",
+            "piercing"
+        ],
+        "Damage Immunities": [],
+        "Condition Immunities": []
+    },
+    {
+        "Name": "Werewolf Ravager",
+        "Damage Vulnerabilities": [
+            "bludgeoning",
+            "piercing",
+            "slashing"
+        ],
+        "Damage Resistances": [],
+        "Damage Immunities": [
+            "bludgeoning",
+            "piercing",
+            "slashing"
+        ],
+        "Condition Immunities": [
+            "charmed",
+            "frightened"
+        ]
+    },
+    {
+        "Name": "Wood Woad",
+        "Damage Vulnerabilities": [
+            "fire"
+        ],
+        "Damage Resistances": [
+            "bludgeoning",
+            "piercing"
+        ],
+        "Damage Immunities": [],
+        "Condition Immunities": [
+            "charmed",
+            "frightened"
+        ]
+    },
+    {
+        "Name": "Wormhearted Suffragan",
+        "Damage Vulnerabilities": [
+            "radiant"
+        ],
+        "Damage Resistances": [],
+        "Damage Immunities": [
+            "necrotic",
+            "poison"
+        ],
+        "Condition Immunities": [
+            "poisoned"
+        ]
+    },
+    {
+        "Name": "Wraithroot Tree",
+        "Damage Vulnerabilities": [
+            "fire"
+        ],
+        "Damage Resistances": [
+            "bludgeoning",
+            "piercing"
+        ],
+        "Damage Immunities": [],
+        "Condition Immunities": [
+            "charmed",
+            "frightened",
+            "paralyzed",
+            "poisoned",
+            "stunned"
+        ]
+    },
+    {
+        "Name": "Yggdrasti",
+        "Damage Vulnerabilities": [
+            "fire"
+        ],
+        "Damage Resistances": [
+            "bludgeoning",
+            "piercing"
+        ],
+        "Damage Immunities": [
+            "lightning"
+        ],
+        "Condition Immunities": [
+            "blinded",
+            "deafened",
+            "exhaustion"
+        ]
+    },
+    {
+        "Name": "Zakya Rakshasa",
+        "Damage Vulnerabilities": [
+            "piercing"
+        ],
+        "Damage Resistances": [
+            "bludgeoning",
+            "piercing",
+            "slashing"
+        ],
+        "Damage Immunities": [],
+        "Condition Immunities": []
     }
-    
 ]
