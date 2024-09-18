@@ -203,6 +203,45 @@ def display_recommended_spells(stdscr, selected_enemy, spells):
         stdscr.refresh()
 
 
+def choose_recommendation_type(stdscr, selected_enemy, items, spells):
+    """Permitir ao usuário escolher entre exibir itens ou magias recomendados usando setas."""
+    options = ["Itens", "Magias"]
+    current_row = 0
+
+    while True:
+        stdscr.clear()
+        stdscr.addstr(0, 0, f"Inimigo selecionado: {selected_enemy.name}")
+        stdscr.addstr(1, 0, "Escolha o tipo de recomendação:")
+
+        # Exibir as opções de recomendação com navegação
+        for idx, option in enumerate(options):
+            if idx == current_row:
+                stdscr.attron(curses.color_pair(1))  # Destacar a linha selecionada
+                stdscr.addstr(idx + 2, 0, option)
+                stdscr.attroff(curses.color_pair(1))  # Remover o destaque
+            else:
+                stdscr.addstr(idx + 2, 0, option)
+
+        stdscr.addstr(len(options) + 3, 0, "ESC para voltar")
+
+        # Obter a tecla pressionada
+        key = stdscr.getch()
+
+        if key == 450 and current_row > 0:  # KEY UP
+            current_row -= 1
+        elif key == 456 and current_row < len(options) - 1:  # KEY DOWN
+            current_row += 1
+        elif key == curses.KEY_ENTER or key in [10, 13]:  # Enter
+            if current_row == 0:
+                display_recommended_items(stdscr, selected_enemy, items)
+            elif current_row == 1:
+                display_recommended_spells(stdscr, selected_enemy, spells)
+        elif key == 27:  # Tecla ESC para voltar ao menu anterior
+            break
+
+        stdscr.refresh()
+
+
 def curses_menu(stdscr, enemies, items, spells):
     """Função para criar a CLI interativa com curses e incluir magias no sistema de recomendação."""
     ITEMS_PER_PAGE = 10
@@ -247,20 +286,7 @@ def curses_menu(stdscr, enemies, items, spells):
             current_row = 0  # Reseta a posição do cursor na nova página
         elif key == curses.KEY_ENTER or key in [10, 13]:  # Enter
             selected_enemy = current_page_enemies[current_row]
-            stdscr.clear()
-            stdscr.addstr(0, 0, f"Inimigo selecionado: {selected_enemy.name}")
-            stdscr.addstr(1, 0, "Recomendações de itens e magias (com pontuação):")
-
-            # Criar as regras e executar o motor de inferência
-            rules = create_rules(selected_enemy)
-            rete_engine = ReteEngine(rules)
-
-            # Executar para itens
-            recommendations_with_score = rete_engine.run(selected_enemy, items)
-            display_recommended_items(stdscr, selected_enemy, items)
-
-            # Executar para magias
-            display_recommended_spells(stdscr, selected_enemy, spells)
+            choose_recommendation_type(stdscr, selected_enemy, items, spells)
 
         elif key == 27:  # Tecla ESC para encerrar o programa
             break
