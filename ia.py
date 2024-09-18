@@ -71,16 +71,27 @@ def create_rules(enemy):
 
 
 def curses_menu(stdscr, enemies, items):
-    """Função para criar a CLI interativa com curses"""
+    """Função para criar a CLI interativa com curses com paginação."""
     curses.curs_set(0)
     current_row = 0
+    items_per_page = 10
+    page = 0
+    total_pages = (len(enemies) - 1) // items_per_page + 1
 
     while True:
         stdscr.clear()
-        stdscr.addstr(0, 0, "Selecione um inimigo (Use as setas e aperte Enter):")
+        stdscr.addstr(
+            0,
+            0,
+            f"Selecione um inimigo (Use as setas para navegar): Página {page+1}/{total_pages}",
+        )
 
-        # Exibir lista de inimigos, destacando o selecionado
-        for idx, enemy in enumerate(enemies):
+        start_idx = page * items_per_page
+        end_idx = start_idx + items_per_page
+        current_page_enemies = enemies[start_idx:end_idx]
+
+        # Exibir lista de inimigos da página atual, destacando o selecionado
+        for idx, enemy in enumerate(current_page_enemies):
             if idx == current_row:
                 stdscr.attron(curses.color_pair(1))  # Destacar a linha selecionada
                 stdscr.addstr(idx + 1, 0, enemy.name)
@@ -90,12 +101,19 @@ def curses_menu(stdscr, enemies, items):
 
         # Obter a tecla pressionada
         key = stdscr.getch()
+
         if key == 450 and current_row > 0:  # KEY UP
             current_row -= 1
-        elif key == 456 and current_row < len(enemies) - 1:  # KEY DOWN
+        elif key == 456 and current_row < len(current_page_enemies) - 1:  # KEY DOWN
             current_row += 1
-        elif key == curses.KEY_ENTER or key in [10, 13]:
-            selected_enemy = enemies[current_row]
+        elif key == 454 and page < total_pages - 1:  # Ir para a próxima página
+            page += 1
+            current_row = 0  # Reseta a posição do cursor na nova página
+        elif key == 452 and page > 0:  # Ir para a página anterior
+            page -= 1
+            current_row = 0  # Reseta a posição do cursor na nova página
+        elif key == curses.KEY_ENTER or key in [10, 13]:  # Enter
+            selected_enemy = current_page_enemies[current_row]
             stdscr.clear()
             stdscr.addstr(0, 0, f"Inimigo selecionado: {selected_enemy.name}")
             stdscr.addstr(1, 0, "Itens recomendados:")
