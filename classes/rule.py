@@ -1,10 +1,11 @@
+from dataclasses import dataclass
+
+
+@dataclass
 class Rule:
-    def __init__(self, enemy_weakness, item_property):
-        self.enemy_weakness = enemy_weakness
-        self.item_property = item_property
+    enemy_weakness: str
+    item_property: str
 
     def matches(self, enemy, item):
-        return any(weakness in item.properties for weakness in enemy.weaknesses)
-
-    def execute(self, item):
-        return item.name
+        # Verifica se uma fraqueza específica do inimigo corresponde à propriedade do item
+        return self.enemy_weakness in item.properties

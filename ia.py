@@ -48,7 +48,7 @@ def main():
     items = create_items(items_data)
 
     # Exemplo: Selecionar o primeiro inimigo para demonstração (Dragon)
-    selected_enemy = enemies[1]
+    selected_enemy = enemies[0]
 
     # Criar as regras com base nas fraquezas do inimigo
     rules = create_rules(selected_enemy)
