@@ -1,7 +1,6 @@
 from dataclasses import dataclass
 from typing import List, Union
 
-from classes.enemy import Enemy
 from classes.item import Item
 from classes.rule import Rule, RuleType
 from classes.spell import Spell
@@ -11,12 +10,12 @@ from classes.spell import Spell
 class ReteEngine:
     rules: List[Rule]
 
-    def match(self, enemy: Enemy, items: List[Union[Item, Spell]]):
+    def match(self, items: List[Union[Item, Spell]]):
         matched_items = []
         for item in items:
             score = 0
             for rule in self.rules:
-                if rule.matches(enemy, item):
+                if rule.matches(item):
                     # Pontuação baseada no tipo de efeito da regra
                     if rule.effect_type == RuleType.VULNERABILITY:
                         score += 3  # Vulnerabilidade aumenta a pontuação
@@ -37,7 +36,7 @@ class ReteEngine:
 
         return matched_items
 
-    def run(self, enemy: Enemy, items: List[Union[Item, Spell]]):
-        applicable_items = self.match(enemy, items)
+    def run(self, items: List[Union[Item, Spell]]):
+        applicable_items = self.match(items)
         applicable_items.sort(key=lambda x: x[1], reverse=True)
         return applicable_items  # Retorna a lista ordenada de tuplas (item, score)

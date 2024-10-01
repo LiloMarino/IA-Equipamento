@@ -60,7 +60,6 @@ def create_rules(enemy: Enemy):
         rules.append(
             Rule(
                 enemy_attribute=vulnerability,
-                item_property=vulnerability,
                 effect_type=RuleType.VULNERABILITY,
             )
         )
@@ -70,7 +69,6 @@ def create_rules(enemy: Enemy):
         rules.append(
             Rule(
                 enemy_attribute=resistance,
-                item_property=resistance,
                 effect_type=RuleType.RESISTANCE,
             )
         )
@@ -80,17 +78,15 @@ def create_rules(enemy: Enemy):
         rules.append(
             Rule(
                 enemy_attribute=immunity,
-                item_property=immunity,
                 effect_type=RuleType.IMMUNITY,
             )
         )
 
     # Criar regras para condições infligidas por magias
-    for condition in enemy.condition_immunities:
+    for condition_immunity in enemy.condition_immunities:
         rules.append(
             Rule(
-                enemy_attribute=condition,
-                item_property=condition,
+                enemy_attribute=condition_immunity,
                 effect_type=RuleType.CONDITION_IMMUNITY,
             )
         )
@@ -106,7 +102,7 @@ def display_recommended_items(stdscr, selected_enemy: Enemy, items: list[Item]):
     # Criar as regras e executar o motor de inferência
     rules = create_rules(selected_enemy)
     rete_engine = ReteEngine(rules)
-    recommendations_with_score = rete_engine.run(selected_enemy, items)
+    recommendations_with_score = rete_engine.run(items)
     TOTAL_PAGES = (len(recommendations_with_score) - 1) // ITEMS_PER_PAGE + 1
 
     while True:
@@ -160,7 +156,7 @@ def display_recommended_spells(stdscr, selected_enemy, spells):
     # Criar as regras e executar o motor de inferência
     rules = create_rules(selected_enemy)
     rete_engine = ReteEngine(rules)
-    spell_recommendations_with_score = rete_engine.run(selected_enemy, spells)
+    spell_recommendations_with_score = rete_engine.run(spells)
     TOTAL_PAGES = (len(spell_recommendations_with_score) - 1) // SPELLS_PER_PAGE + 1
 
     while True:
