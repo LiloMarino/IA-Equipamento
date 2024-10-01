@@ -4,7 +4,7 @@ import json
 from classes.enemy import Enemy
 from classes.item import Item
 from classes.rete_engine import ReteEngine
-from classes.rule import Rule
+from classes.rule import Rule, RuleType
 from classes.spell import Spell
 
 
@@ -51,7 +51,7 @@ def create_spells(data):
     return spells
 
 
-def create_rules(enemy):
+def create_rules(enemy: Enemy):
     """Criar regras de correspondência entre vulnerabilidades, fraquezas, resistência e itens e magias."""
     rules = []
 
@@ -61,7 +61,7 @@ def create_rules(enemy):
             Rule(
                 enemy_attribute=vulnerability,
                 item_property=vulnerability,
-                effect_type="vulnerability",
+                effect_type=RuleType.VULNERABILITY,
             )
         )
 
@@ -71,7 +71,7 @@ def create_rules(enemy):
             Rule(
                 enemy_attribute=resistance,
                 item_property=resistance,
-                effect_type="resistance",
+                effect_type=RuleType.RESISTANCE,
             )
         )
 
@@ -79,7 +79,9 @@ def create_rules(enemy):
     for immunity in enemy.immunities:
         rules.append(
             Rule(
-                enemy_attribute=immunity, item_property=immunity, effect_type="immunity"
+                enemy_attribute=immunity,
+                item_property=immunity,
+                effect_type=RuleType.IMMUNITY,
             )
         )
 
@@ -89,13 +91,13 @@ def create_rules(enemy):
             Rule(
                 enemy_attribute=condition,
                 item_property=condition,
-                effect_type="condition_immunity",
+                effect_type=RuleType.CONDITION_IMMUNITY,
             )
         )
     return rules
 
 
-def display_recommended_items(stdscr, selected_enemy, items):
+def display_recommended_items(stdscr, selected_enemy: Enemy, items: list[Item]):
     """Função para exibir os itens recomendados com pontuação, com paginação."""
     ITEMS_PER_PAGE = 10
     current_row = 0

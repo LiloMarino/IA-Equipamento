@@ -1,28 +1,42 @@
 from dataclasses import dataclass
 from typing import List
 
-from classes.rule import Rule
+from classes.enemy import Enemy
+from classes.item import Item
+from classes.rule import Rule, RuleType
+from classes.spell import Spell
 
 
 @dataclass
 class ReteEngine:
     rules: List[Rule]
 
-    def match(self, enemy, items):
+    def match(self, enemy: Enemy, items: list[Item | Spell]):
         matched_items = []
         for item in items:
             score = 0
             for rule in self.rules:
-                if rule.effect_type == "vulnerability" and rule.matches(enemy, item):
-                    score += 2  # Dê mais peso para vulnerabilidades
-                elif rule.effect_type == "resistance" and rule.matches(enemy, item):
-                    score -= 1  # Reduza a pontuação por resistências
-                elif rule.effect_type == "immunity" and rule.matches(enemy, item):
-                    score = 0  # Zere a pontuação se houver imunidade
-                elif rule.effect_type == "condition_immunity" and rule.matches(
+                if rule.effect_type == RuleType.VULNERABILITY and rule.matches(
                     enemy, item
                 ):
-                    score += 1  # Pontuação extra para condições infligidas por magias, se aplicável
+                    score += 3  # Dê mais peso para vulnerabilidades
+                elif rule.effect_type == RuleType.RESISTANCE and rule.matches(
+                    enemy, item
+                ):
+                    score -= 2  # Reduza a pontuação por resistências ou imunidade a condições
+                elif rule.effect_type == RuleType.IMMUNITY and rule.matches(
+                    enemy, item
+                ):
+                    score -= 3  # Reduza drasticamente se houver imunidade a algum dano
+                elif rule.effect_type == RuleType.CONDITION_IMMUNITY and rule.matches(
+                    enemy, item
+                ):
+                    score -= 1  # Reduza a pontuação por imunidade a condições
+
+            # Aumente a pontuação dos items que infligem condições aos monstros
+            if hasattr(item, "conditions_inflicted"):
+                for _ in item.conditions_inflicted:
+                    score += 1
             if score > 0:
                 matched_items.append((item, score))
         return matched_items
@@ -30,5 +44,5 @@ class ReteEngine:
     def run(self, enemy, items):
         applicable_items = self.match(enemy, items)
         applicable_items.sort(key=lambda x: x[1], reverse=True)
-        # Agora retorna uma lista de tuplas (item, score) ao invés de apenas os nomes
+        # Agora retorna uma lista de tuplas (item, score)
         return applicable_items
