@@ -16,7 +16,7 @@ class ReteEngine:
             score = 0
             for rule in self.rules:
                 if rule.matches(item):
-                    score += rule.weight  # O peso é diretamente adicionado à pontuação
+                    score += rule.weight
 
             # Se o item inflige condições, aumenta a pontuação
             if hasattr(item, "conditions_inflicted"):
