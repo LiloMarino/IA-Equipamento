@@ -21,8 +21,8 @@ selecionado, atribuindo uma pontuação com base nos seguintes critérios:
 
 - **Vulnerabilidades**: Itens ou magias que exploram vulnerabilidades do inimigo recebem uma pontuação mais alta.
 - **Resistências**: A pontuação é reduzida para itens que causam dano ao qual o inimigo é resistente.
-- **Imunidades**: Se o inimigo for imune ao efeito do item, a pontuação é zerada.
-- **Imunidades a Condições**: Regras especiais são aplicadas para magias que infligem condições nas quais o inimigo é imune.
+- **Imunidades**: Se o inimigo for imune a algum dano do item, a pontuação é drasticamente reduzida.
+- **Imunidades a Condições**: Se o inimigo não é imune a algum tipo de condição então ele é vulnerável a ela, e portanto, a pontuação é incrementada, caso contrário (ou seja ele é imune) esse incremento é anulado.
 
 O algoritmo Rete permite a correspondência eficiente de regras, otimizando o processo de inferência ao evitar a repetição desnecessária de verificações.
 
