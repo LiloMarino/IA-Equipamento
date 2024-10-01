@@ -2,7 +2,7 @@ from dataclasses import dataclass
 from typing import List, Union
 
 from classes.item import Item
-from classes.rule import Rule, RuleType
+from classes.rule import Rule
 from classes.spell import Spell
 
 
@@ -16,15 +16,7 @@ class ReteEngine:
             score = 0
             for rule in self.rules:
                 if rule.matches(item):
-                    # Pontuação baseada no tipo de efeito da regra
-                    if rule.effect_type == RuleType.VULNERABILITY:
-                        score += 3  # Vulnerabilidade aumenta a pontuação
-                    elif rule.effect_type == RuleType.RESISTANCE:
-                        score -= 2  # Resistência diminui a pontuação
-                    elif rule.effect_type == RuleType.IMMUNITY:
-                        score -= 3  # Imunidade a dano reduz drasticamente (proporcional a vulnerabilidade)
-                    elif rule.effect_type == RuleType.CONDITION_IMMUNITY:
-                        score -= 1  # Imunidade a condições diminui a pontuação
+                    score += rule.weight  # O peso é diretamente adicionado à pontuação
 
             # Se o item inflige condições, aumenta a pontuação
             if hasattr(item, "conditions_inflicted"):

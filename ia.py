@@ -54,13 +54,14 @@ def create_spells(data):
 def create_rules(enemy: Enemy):
     """Criar regras de correspondência entre vulnerabilidades, fraquezas, resistência e itens e magias."""
     rules = []
-
+    # Peso é baseado no tipo de efeito da regra
     # Criar regras para vulnerabilidades
     for vulnerability in enemy.vulnerabilities:
         rules.append(
             Rule(
                 enemy_attribute=vulnerability,
                 effect_type=RuleType.VULNERABILITY,
+                weight=3,  # Vulnerabilidade aumenta a pontuação
             )
         )
 
@@ -70,6 +71,7 @@ def create_rules(enemy: Enemy):
             Rule(
                 enemy_attribute=resistance,
                 effect_type=RuleType.RESISTANCE,
+                weight=-2,  # Resistência diminui a pontuação
             )
         )
 
@@ -79,6 +81,7 @@ def create_rules(enemy: Enemy):
             Rule(
                 enemy_attribute=immunity,
                 effect_type=RuleType.IMMUNITY,
+                weight=-3,  # Imunidade a dano reduz drasticamente (proporcional a vulnerabilidade)
             )
         )
 
@@ -88,6 +91,7 @@ def create_rules(enemy: Enemy):
             Rule(
                 enemy_attribute=condition_immunity,
                 effect_type=RuleType.CONDITION_IMMUNITY,
+                weight=-1,  # Imunidade a condições diminui a pontuação
             )
         )
     return rules

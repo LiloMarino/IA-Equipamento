@@ -17,6 +17,7 @@ class RuleType(Enum):
 class Rule:
     enemy_attribute: str
     effect_type: RuleType
+    weight: int
 
     def matches(self, item: Union[Item, Spell]):
         # Verifica se a propriedade do item corresponde ao atributo do inimigo para a regra
