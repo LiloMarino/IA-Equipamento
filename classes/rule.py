@@ -1,5 +1,6 @@
 from dataclasses import dataclass
 from enum import Enum
+from typing import Union
 
 from classes.enemy import Enemy
 from classes.item import Item
@@ -19,25 +20,17 @@ class Rule:
     item_property: str
     effect_type: RuleType
 
-    def matches(self, enemy: Enemy, item: Item | Spell):
-        if self.effect_type == RuleType.VULNERABILITY:
-            return (
-                self.enemy_attribute in enemy.vulnerabilities
-                and self.item_property in item.properties
-            )
-        elif self.effect_type == RuleType.RESISTANCE:
-            return (
-                self.enemy_attribute in enemy.resistances
-                and self.item_property in item.properties
-            )
-        elif self.effect_type == RuleType.IMMUNITY:
-            return (
-                self.enemy_attribute in enemy.immunities
-                and self.item_property in item.properties
-            )
-        elif self.effect_type == RuleType.CONDITION_IMMUNITY:
-            return (
-                self.enemy_attribute in enemy.condition_immunities
-                and self.item_property in item.properties
-            )
-        return False
+    def matches(self, enemy: Enemy, item: Union[Item, Spell]):
+        # Mapeia tipos de efeito para as correspondentes propriedades de Enemy
+        attribute_map = {
+            RuleType.VULNERABILITY: enemy.vulnerabilities,
+            RuleType.RESISTANCE: enemy.resistances,
+            RuleType.IMMUNITY: enemy.immunities,
+            RuleType.CONDITION_IMMUNITY: enemy.condition_immunities,
+        }
+
+        # Verifica se a propriedade do item corresponde ao atributo do inimigo para a regra
+        return (
+            self.enemy_attribute in attribute_map[self.effect_type]
+            and self.item_property in item.properties
+        )

@@ -1,5 +1,5 @@
 from dataclasses import dataclass
-from typing import List
+from typing import List, Union
 
 from classes.enemy import Enemy
 from classes.item import Item
@@ -11,38 +11,33 @@ from classes.spell import Spell
 class ReteEngine:
     rules: List[Rule]
 
-    def match(self, enemy: Enemy, items: list[Item | Spell]):
+    def match(self, enemy: Enemy, items: List[Union[Item, Spell]]):
         matched_items = []
         for item in items:
             score = 0
             for rule in self.rules:
-                if rule.effect_type == RuleType.VULNERABILITY and rule.matches(
-                    enemy, item
-                ):
-                    score += 3  # Dê mais peso para vulnerabilidades
-                elif rule.effect_type == RuleType.RESISTANCE and rule.matches(
-                    enemy, item
-                ):
-                    score -= 2  # Reduza a pontuação por resistências ou imunidade a condições
-                elif rule.effect_type == RuleType.IMMUNITY and rule.matches(
-                    enemy, item
-                ):
-                    score -= 3  # Reduza drasticamente se houver imunidade a algum dano
-                elif rule.effect_type == RuleType.CONDITION_IMMUNITY and rule.matches(
-                    enemy, item
-                ):
-                    score -= 1  # Reduza a pontuação por imunidade a condições
+                if rule.matches(enemy, item):
+                    # Pontuação baseada no tipo de efeito da regra
+                    if rule.effect_type == RuleType.VULNERABILITY:
+                        score += 3  # Vulnerabilidade aumenta a pontuação
+                    elif rule.effect_type == RuleType.RESISTANCE:
+                        score -= 2  # Resistência diminui a pontuação
+                    elif rule.effect_type == RuleType.IMMUNITY:
+                        score -= 3  # Imunidade a dano reduz drasticamente (proporcional a vulnerabilidade)
+                    elif rule.effect_type == RuleType.CONDITION_IMMUNITY:
+                        score -= 1  # Imunidade a condições diminui a pontuação
 
-            # Aumente a pontuação dos items que infligem condições aos monstros
+            # Se o item inflige condições, aumenta a pontuação
             if hasattr(item, "conditions_inflicted"):
                 for _ in item.conditions_inflicted:
-                    score += 1
+                    score += 1  # Proporcional a imunidade a condições
+
             if score > 0:
                 matched_items.append((item, score))
+
         return matched_items
 
-    def run(self, enemy, items):
+    def run(self, enemy: Enemy, items: List[Union[Item, Spell]]):
         applicable_items = self.match(enemy, items)
         applicable_items.sort(key=lambda x: x[1], reverse=True)
-        # Agora retorna uma lista de tuplas (item, score)
-        return applicable_items
+        return applicable_items  # Retorna a lista ordenada de tuplas (item, score)
