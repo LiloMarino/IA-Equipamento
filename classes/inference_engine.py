@@ -7,7 +7,7 @@ from classes.spell import Spell
 
 
 @dataclass
-class ReteEngine:
+class InferenceEngine:
     rules: List[Rule]
 
     def match(self, items: List[Union[Item, Spell]]):

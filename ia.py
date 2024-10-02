@@ -3,7 +3,7 @@ import json
 
 from classes.enemy import Enemy
 from classes.item import Item
-from classes.rete_engine import ReteEngine
+from classes.inference_engine import InferenceEngine
 from classes.rule import Rule, RuleType
 from classes.spell import Spell
 
@@ -105,8 +105,8 @@ def display_recommended_items(stdscr, selected_enemy: Enemy, items: list[Item]):
 
     # Criar as regras e executar o motor de inferência
     rules = create_rules(selected_enemy)
-    rete_engine = ReteEngine(rules)
-    recommendations_with_score = rete_engine.run(items)
+    inference_eng = InferenceEngine(rules)
+    recommendations_with_score = inference_eng.run(items)
     TOTAL_PAGES = (len(recommendations_with_score) - 1) // ITEMS_PER_PAGE + 1
 
     while True:
@@ -159,8 +159,8 @@ def display_recommended_spells(stdscr, selected_enemy, spells):
 
     # Criar as regras e executar o motor de inferência
     rules = create_rules(selected_enemy)
-    rete_engine = ReteEngine(rules)
-    spell_recommendations_with_score = rete_engine.run(spells)
+    inference_eng = InferenceEngine(rules)
+    spell_recommendations_with_score = inference_eng.run(spells)
     TOTAL_PAGES = (len(spell_recommendations_with_score) - 1) // SPELLS_PER_PAGE + 1
 
     while True:
